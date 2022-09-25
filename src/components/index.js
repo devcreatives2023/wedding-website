@@ -1,0 +1,5 @@
+export {default as Header} from './Header/Header'
+export {default as Navbar} from './Navbar/Navbar'
+export {default as Text} from './Text/Text'
+export {default as Xd} from './Xd/Xd'
+export {default as Types} from './Types/Types'
