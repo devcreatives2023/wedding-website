@@ -24,10 +24,10 @@ const Navbar = () => {
       }}}
       className="mr-auto flex  items-center  justify-end ">
         <div className=" font-logo lg:text-[2rem] 
-        text-[1rem] xl:text-[2rem]
+        text-[1rem] xl:text-[1.4rem]
         md:text-[1.5rem]
         mr-1 tracking-wide xl:leading-10 flex items-center justify-center mt-4 " style={{textShadow:"2px 4px 3px grey"}}>
-          wedding <br /> to sardinia 
+        wedding  <br />   to sardinia 
         </div>
         <motion.div initial={{scale:1}}
         whileHover={{scale:1.1,transition:{

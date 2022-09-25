@@ -5,13 +5,13 @@ const Header = () => {
 
   return (
     <> 
-    
-      <div className=" z-0 relative h-[99vh]">
+      <div className="relative   h-[99vh]">
         <img 
         src={images.br3} 
-        className=' z-0  w-[100%]  h-[80vh] object-cover fixed '
+        className='top-0 left-0 right-0 object-contain  fixed '
          />
       </div>
+
       <div className=" absolute right-0 top-0">
         <Navbar />
       </div>

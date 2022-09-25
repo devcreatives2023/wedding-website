@@ -4,35 +4,41 @@ const Text = () => {
   return (
     <motion.div
       initial={{
-        y: -20,
+        y: -10,
         rotate: "270deg",
       }}
       whileHover={{
         y: 0,
         transition: {
           duration: 2,
-          ease: "easeIn",
-          type: "spring",
+          ease: "easeInOut",
         },
       }}
-      className=" flex text-[2.7rem] uppercase top-[340px] -left-[330px]  gap-[20px]  fixed z-[1000] text-[#eee] "
+      className=" flex text-[2.7rem] uppercase top-[420px] -left-[430px]  gap-[20px]  fixed z-[1000] text-[#cfcfcf] "
     >
       <motion.h1
-        initial={{ color: "#eee" }}
+        initial={{ color: "#cfcfcf" }}
         whileHover={{ color: "black" }}
         style={{ transition: "all 0.5s" }}
       >
-        marketing
+        marketings 
       </motion.h1>
       <motion.h1
-        initial={{ color: "#eee" }}
+        initial={{ color: "#cfcfcf" }}
         whileHover={{ color: "black" }}
         style={{ transition: "all 0.5s" }}
       >
         location
       </motion.h1>
       <motion.h1
-        initial={{ color: "#eee" }}
+        initial={{ color: "#cfcfcf" }}
+        whileHover={{ color: "black" }}
+        style={{ transition: "all 0.5s" }}
+      >
+        things
+      </motion.h1>
+      <motion.h1
+        initial={{ color: "#cfcfcf" }}
         whileHover={{ color: "black" }}
         style={{ transition: "all 0.5s" }}
       >
