@@ -61,7 +61,7 @@ const Home = () => {
           </div>
         </div>
         <div className=" bg-white relative  h-[200vh]"> 
-         <div className="  bg-white  relative z-[1000000] left-0 right-0">
+         <div className="  bg-white h-[50vh]">
           <Location />
         </div>
         </div>
