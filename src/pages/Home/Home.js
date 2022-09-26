@@ -16,21 +16,23 @@ const Home = () => {
       </div>
 
       <div className=" relative z-[100] bg-white ">
-        <div className="px-[4rem] p-section  ">
-          <h1 className="capitalize text-[5rem]  tracking-wide text-left px-[6rem] sticky z-[20000] text-[gray]">
+        <div className="xl:px-[4rem] lg:px-[4rem] xl:p-section lg:p-section">
+          <h1 className="capitalize xl:text-[5rem] lg:text-[5rem] text-[2rem]
+            tracking-wide text-left xl:px-[6rem] lg:px-[6rem] sticky z-[20000] text-[gray]">
             villa las tronas
           </h1>
-          <h1 className="capitalize text-[11rem] absolute  top-[90px] left-[190px] tracking-wider text-[#eee]">
+          <h1 className="capitalize xl:text-[11rem] lg:text-[11rem] text-[2rem]
+           absolute  xl:top-[90px] lg:top-[90px] xl:left-[190px] lg:left-[190px] tracking-wider text-[#eee]">
             villa las tronas
           </h1>
 
           <Types />
         </div>
 
-        <div className="px-[4rem]  p-section mt-[1410px] bg-white h-[100vh] ">
+        <div className="px-[4rem]  p-section xl:mt-[1410px] lg:mt-[1410px] mt-[1100px] bg-white h-[100vh] ">
           <h1
-            className="capitalize text-[5.5rem] 
-             tracking-wide text-left px-[6rem] sticky 
+            className="capitalize xl:text-[5.5rem] lg:text-[5.5rem] text-[2rem] 
+             tracking-wide xl:text-left lg:text-left xl:px-[6rem] lg:px-[6rem] sticky 
           z-[20000] text-[gray]"
           >
             stinion

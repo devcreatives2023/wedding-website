@@ -52,18 +52,17 @@ const Stinion = () => {
   return (
     <div className="h-[40vh] ">
       <h1
-        className="capitalize text-[11rem]
-        flex justify-center items-center text-center tracking-wider text-[#eee]"
+        className="capitalize xl:text-[11rem] lg:text-[11rem] text-[7rem]
+        flex justify-center items-center xl:text-center lg:text-center  tracking-wider text-[#eee]"
       >
         stinion
       </h1>
       <AnimatePresence>
-        <motion.div className="bg-white z-[90] mt-[-140px]"
-        style={{minHeight}}
+        <motion.div
+          className="bg-white z-[90] mt-[-140px]"
+          style={{ minHeight }}
         >
-          <div
-            className="flex pl-[60px] bg-white h-[100vh]"
-          >
+          <div className="flex pl-[60px] bg-white h-[100vh] xl:flex-row lg:flex-row flex-col">
             <motion.div
               ref={parallaxContainerRef}
               initial={{ y: 0 }}
@@ -82,8 +81,7 @@ const Stinion = () => {
                 src={images.br3}
                 className="w-[500px] object-cover mt-[40px] h-[300px]"
               />
-              <p
-                className=" absolute top-[300px] ml-4 text-white text-xl z-[4000] px-2">
+              <p className=" absolute top-[300px] ml-4 text-white text-xl z-[4000] px-2">
                 Destroy couch as revenge
               </p>
             </motion.div>
@@ -136,8 +134,10 @@ const Stinion = () => {
             </motion.div>
           </div>
 
-          <motion.div className="flex  bg-white justify-center 
-          items-center mt-[-140px]">
+          <motion.div
+            className="flex  bg-white justify-center 
+          items-center mt-[-140px]"
+          >
             <motion.div
               className="relative z-1 drop-shadow-xl ml-6 overflow-hidden"
               ref={parallaxContainerRef}

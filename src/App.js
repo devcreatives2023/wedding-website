@@ -80,7 +80,8 @@ const App = () => {
   return (
     <>
       <div
-        className="cursor-dot flex  font-logo justify-center items-center capitalize z-[900000000000]
+        className="cursor-dot flex  font-logo justify-center
+         items-center capitalize z-[12290000000000000000000]
          text-red-700 font-semibold "
         ref={dot}>
         <i>wedding</i> <icons.AiFillHeart className="ml-1" />

@@ -14,7 +14,8 @@ const Text = () => {
           ease: "easeInOut",
         },
       }}
-      className=" flex text-[2.7rem] uppercase top-[420px] -left-[430px]  gap-[20px]  fixed z-[1000] text-[#cfcfcf] "
+      className="invisible xl:visible lg:visible  flex xl:text-[2.7rem] lg:text-[2.7rem] text-[2rem] uppercase xl:top-[420px] lg:top-[420px]
+      xl:-left-[430px] lg:-left-[430px] left-[-325px] top-[350px]  gap-[20px]  fixed z-[1000] text-[#cfcfcf] "
     >
       <motion.h1
         initial={{ color: "#cfcfcf" }}
