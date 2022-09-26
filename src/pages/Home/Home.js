@@ -53,7 +53,7 @@ const Home = () => {
         </div>
         <div className="px-[4rem] p-section mt-[790px] bg-white h-[100vh] ">
           <h1
-            className="capitalize text-[5.5rem] tracking-wide text-left px-[6rem] sticky 
+            className="capitalize xl:text-[5.5rem] lg:text-[5.5rem] md:text-[4rem] tracking-wide text-left px-[6rem] sticky 
             z-[20000] text-[gray]"
           >
             L'Agnata di De Andre'

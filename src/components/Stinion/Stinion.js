@@ -136,7 +136,7 @@ const Stinion = () => {
             </motion.div>
           </div>
 
-          <div className="flex  bg-white justify-center 
+          <motion.div className="flex  bg-white justify-center 
           items-center mt-[-140px]">
             <motion.div
               className="relative z-1 drop-shadow-xl ml-6 overflow-hidden"
@@ -199,7 +199,7 @@ const Stinion = () => {
                 Destroy couch as revenge.Destroy couch as
               </p>
             </motion.div>
-          </div>
+          </motion.div>
         </motion.div>
       </AnimatePresence>
     </div>

@@ -15,7 +15,7 @@ const Checklist = () => {
             },
           }}
           src={images.checklist}
-          className="  overflow-hidden  brightness-[0.9] h-[700px] w-[100%] object-cover"
+          className="  overflow-hidden  brightness-[0.9] xl:h-[700px] lg:h-[700px]  w-[100%] object-cover"
         />
 
         <p

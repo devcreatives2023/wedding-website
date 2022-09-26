@@ -54,8 +54,8 @@ const Andre = () => {
     <div className=" bg-white">
       <h1
         className="capitalize xl:text-[8rem]
- lg:text-[7rem]
-        flex justify-end  items-end   ml-[20px] tracking-wider text-[#eee]"
+        lg:text-[7rem] 
+        flex justify-end  items-end  ml-[20px] tracking-wider text-[#eee]"
       >
         L'Agnata di De Andre'
       </h1>
@@ -92,7 +92,7 @@ const Andre = () => {
               initial={{ y: 0 }}
               style={{ y }}
               className=" relative z-4 left-[-40px]
-             overflow-hidden drop-shadow-xl top-[-120px] "
+             overflow-hidden drop-shadow-xl xl:top-[-120px] lg:top-[-120px] md:top-[-50px] "
             >
               <motion.img
                 initial={{ scale: 1 }}
@@ -104,7 +104,8 @@ const Andre = () => {
                   },
                 }}
                 src={images.andre1}
-                className=" ml-6  w-[420px] object-cover  h-[600px]"
+                className=" ml-6  w-[420px] object-cover  xl:h-[600px]
+                 lg:h-[580px] md:h-[500px]"
               />
             </motion.div>
 
