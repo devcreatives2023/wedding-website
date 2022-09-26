@@ -63,7 +63,6 @@ const Stinion = () => {
         >
           <div
             className="flex pl-[60px] bg-white h-[100vh]"
-            // style={{ minHeight }}
           >
             <motion.div
               ref={parallaxContainerRef}
@@ -80,7 +79,7 @@ const Stinion = () => {
                     ease: "easeInOut",
                   },
                 }}
-                src={images.ty2}
+                src={images.br3}
                 className="w-[500px] object-cover mt-[40px] h-[300px]"
               />
               <p
@@ -104,7 +103,7 @@ const Stinion = () => {
                     ease: "easeInOut",
                   },
                 }}
-                src={images.ty4}
+                src={images.weddin1}
                 className=" ml-6  w-[420px] object-fill  h-[600px]"
               />
             </motion.div>
@@ -125,8 +124,8 @@ const Stinion = () => {
                     ease: "easeInOut",
                   },
                 }}
-                src={images.wedding1}
-                className="w-[420px] object-cover relative right-5 h-[250px]  "
+                src={images.weddin5}
+                className="w-[420px] object-cover relative right-5 h-[250px] brightness-75  "
               />
               <p
                 className=" absolute top-[210px] ml-4 text-white text-xl z-[4000] px-2
@@ -154,7 +153,7 @@ const Stinion = () => {
                     ease: "easeInOut",
                   },
                 }}
-                src={images.ty5}
+                src={images.r1}
                 className="w-[420px] object-cover h-[530px]"
               />
             </motion.div>
@@ -174,7 +173,7 @@ const Stinion = () => {
                     ease: "easeInOut",
                   },
                 }}
-                src={images.wedding1}
+                src={images.r2}
                 className=" ml-6  w-[450px] object-fill  h-[290px]"
               />
             </motion.div>
@@ -193,7 +192,7 @@ const Stinion = () => {
                     ease: "easeInOut",
                   },
                 }}
-                src={images.ty4}
+                src={images.r3}
                 className="w-[380px] object-cover relative right-12 h-[520px]  "
               />
               <p className=" absolute bottom-[10px] ml-2 text-white text-lg z-[4000] ">

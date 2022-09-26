@@ -15,55 +15,54 @@ const rand = (min = 0, max = 100) => {
   return Math.floor(Math.random() * (+max - +min)) + +min;
 };
 const Sugolgone = () => {
-    const range = 3;
-    const { scrollY } = useViewportScroll();
-    const parallaxContainerRef = useRef(null);
-    const [offsetTop, setOffsetTop] = useState(0);
-    const [minHeight, setMinHeight] = useState("auto");
-    const springConfig = {
-      damping: 100,
-      stiffness: 100,
-      mass: rand(1, 4),
+  const range = 3;
+  const { scrollY } = useViewportScroll();
+  const parallaxContainerRef = useRef(null);
+  const [offsetTop, setOffsetTop] = useState(0);
+  const [minHeight, setMinHeight] = useState("auto");
+  const springConfig = {
+    damping: 100,
+    stiffness: 100,
+    mass: rand(1, 4),
+  };
+
+  useLayoutEffect(() => {
+    if (!parallaxContainerRef.current) {
+      return null;
+    }
+    const onResize = () => {
+      setOffsetTop(parallaxContainerRef.current.offsetTop);
+      setMinHeight(
+        calculateMinHeight(parallaxContainerRef.current.offsetTop, range)
+      );
     };
-  
-    useLayoutEffect(() => {
-      if (!parallaxContainerRef.current) {
-        return null;
-      }
-      const onResize = () => {
-        setOffsetTop(parallaxContainerRef.current.offsetTop);
-        setMinHeight(
-          calculateMinHeight(parallaxContainerRef.current.offsetTop, range)
-        );
-      };
-      onResize();
-      window.addEventListener("resize", onResize);
-      return () => window.removeEventListener("resize", onResize);
-    }, [parallaxContainerRef]);
-  
-    const y = useSpring(
-      useTransform(
-        scrollY,
-        [offsetTop - 500, offsetTop + 500],
-        ["0%", `${range * 30}%`]
-      ),
-      springConfig
-    );
+    onResize();
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, [parallaxContainerRef]);
 
+  const y = useSpring(
+    useTransform(
+      scrollY,
+      [offsetTop - 500, offsetTop + 500],
+      ["0%", `${range * 30}%`]
+    ),
+    springConfig
+  );
 
-    return (
+  return (
     <div className="h-[40vh] ">
       <h1
-        className="capitalize text-[11rem]
+        className="capitalize xl:text-[11rem]
+        lg:text-[10rem] md:text-[9rem]
         flex justify-end items-end text-right tracking-wider text-[#eee]"
       >
         Su golgone
       </h1>
       <AnimatePresence>
-        <motion.div className="bg-white z-[90] mt-[-140px]  " 
-         ref={parallaxContainerRef}
-         initial={{ y: 0 }}
-         style={{ y }}
+        <motion.div
+          style={{ minHeight }}
+          className="bg-white z-[90] xl:mt-[-140px] lg:mt-[-90px]  "
         >
           <div
             className="flex pl-[60px] bg-white h-[100vh]  "
@@ -71,7 +70,9 @@ const Sugolgone = () => {
           >
             <motion.div
               className="relative z-0 drop-shadow-xl ml-6 overflow-hidden"
-             
+              ref={parallaxContainerRef}
+              initial={{ y: 0 }}
+              style={{ y }}
             >
               <motion.img
                 initial={{ scale: 1 }}
@@ -82,8 +83,9 @@ const Sugolgone = () => {
                     ease: "easeInOut",
                   },
                 }}
-                src={images.ty2}
-                className="w-[500px] object-cover mt-[40px] h-[300px]"/>
+                src={images.rose2}
+                className="w-[500px] object-cover mt-[40px] h-[300px]"
+              />
               <p
                 className=" absolute top-[300px] ml-4 text-white text-xl z-[4000] px-2
                 "
@@ -107,8 +109,8 @@ const Sugolgone = () => {
                     ease: "easeInOut",
                   },
                 }}
-                src={images.ty4}
-                className=" ml-6  w-[420px] object-fill  h-[600px]"
+                src={images.rose3}
+                className=" ml-6  w-[420px] object-cover  brightness-75 h-[600px]"
               />
             </motion.div>
 
@@ -128,7 +130,7 @@ const Sugolgone = () => {
                     ease: "easeInOut",
                   },
                 }}
-                src={images.wedding1}
+                src={images.rose2}
                 className="w-[420px] object-cover relative right-5 h-[250px]  "
               />
               <p
@@ -139,8 +141,10 @@ const Sugolgone = () => {
               </p>
             </motion.div>
           </div>
-          <div className="flex  bg-white justify-center items-center 
-          mt-[-180px]">
+          <div
+            className="flex  bg-white justify-center items-center 
+          mt-[-180px]"
+          >
             <motion.div
               className="relative z-1 drop-shadow-xl ml-6 overflow-hidden"
               ref={parallaxContainerRef}
@@ -156,7 +160,7 @@ const Sugolgone = () => {
                     ease: "easeInOut",
                   },
                 }}
-                src={images.ty5}
+                src={images.rose4}
                 className="w-[420px] object-cover h-[530px]"
               />
             </motion.div>
@@ -176,8 +180,8 @@ const Sugolgone = () => {
                     ease: "easeInOut",
                   },
                 }}
-                src={images.wedding1}
-                className=" ml-6  w-[450px] object-fill  h-[290px]"
+                src={images.rose5}
+                className=" ml-6  w-[450px] object-cover  h-[290px]"
               />
             </motion.div>
             <motion.div
@@ -195,7 +199,7 @@ const Sugolgone = () => {
                     ease: "easeInOut",
                   },
                 }}
-                src={images.ty4}
+                src={images.rose6}
                 className="w-[380px] object-cover relative right-12 h-[520px]  "
               />
               <p className=" absolute bottom-[10px] ml-2 text-white text-lg z-[4000] ">
@@ -206,7 +210,7 @@ const Sugolgone = () => {
         </motion.div>
       </AnimatePresence>
     </div>
-  )
-}
+  );
+};
 
-export default Sugolgone
+export default Sugolgone;

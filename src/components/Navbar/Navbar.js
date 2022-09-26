@@ -19,7 +19,7 @@ const Navbar = () => {
       className={
         navbar
           ? "  capitalize text-[#8f8f8f]  fixed left-0 xl:right-0 right-10 z-[1000000] transition-[0.9s] xl:p-logo lg:p-lg md:p-md sm:p-sm"
-          : "text-[#eee] fixed xl:p-logo lg:p-lg md:p-md sm:p-sm left-0 right-0  transition-[0.9s]"
+          : "text-[#eee] fixed xl:p-logo  md:p-md p-0 left-0 right-0  transition-[0.9s]"
       }
       style={{ textShadow: " 1px 1px 2px black" }}
     >
@@ -29,13 +29,14 @@ const Navbar = () => {
             duration: 1,
           },
         }}
-        className="mr-auto flex  items-center  justify-end "
+        className="mr-auto flex   items-center  justify-end "
       >
         <div
-          className=" font-logo lg:text-[2rem] 
+          className=" font-logo lg:text-[1.5rem] 
         text-[1rem] xl:text-[1.4rem]
         md:text-[1.5rem]
-        mr-1 tracking-wide xl:leading-10 flex items-center justify-center mt-4 font-bold "
+        mr-1 tracking-wide xl:leading-10 flex items-center 
+        justify-center mt-4 font-bold "
         >
           wedding <br /> to sardinia
         </div>

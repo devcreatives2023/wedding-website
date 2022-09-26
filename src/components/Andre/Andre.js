@@ -53,14 +53,15 @@ const Andre = () => {
   return (
     <div className=" bg-white">
       <h1
-        className="capitalize text-[8rem]
-      flex justify-end  items-end   ml-[20px] tracking-wider text-[#eee]"
+        className="capitalize xl:text-[8rem]
+ lg:text-[7rem]
+        flex justify-end  items-end   ml-[20px] tracking-wider text-[#eee]"
       >
         L'Agnata di De Andre'
       </h1>
       <AnimatePresence>
         <div className="mt-[-00px]  bg-white">
-          <div className="flex pl-[60px] mt-[-190px]  h-[100vh]  ">
+          <motion.div className="flex pl-[60px] mt-[-190px]  h-[100vh]  ">
             <motion.div
               ref={parallaxContainerRef}
               initial={{ y: 0 }}
@@ -72,11 +73,11 @@ const Andre = () => {
                 whileHover={{
                   scale: 1.01,
                   transition: {
-                    duration: 1,
-                    ease: "easeInOut",
+                  duration: 1,
+                  ease: "easeInOut",
                   },
                 }}
-                src={images.ty2}
+                src={images.andre3}
                 className="w-[500px] object-cover mt-[40px] h-[300px]"
               />
               <p
@@ -98,12 +99,12 @@ const Andre = () => {
                 whileHover={{
                   scale: 1.01,
                   transition: {
-                    duration: 1,
-                    ease: "easeInOut",
+                  duration: 1,
+                  ease:"easeInOut",
                   },
                 }}
-                src={images.ty4}
-                className=" ml-6  w-[420px] object-fill  h-[600px]"
+                src={images.andre1}
+                className=" ml-6  w-[420px] object-cover  h-[600px]"
               />
             </motion.div>
 
@@ -117,13 +118,12 @@ const Andre = () => {
                 initial={{ scale: 1 }}
                 whileHover={{
                   scale: 1.01,
-
                   transition: {
                     duration: 1,
                     ease: "easeInOut",
                   },
                 }}
-                src={images.wedding1}
+                src={images.andre2}
                 className="w-[420px] object-cover relative right-5 h-[250px]  "
               />
               <p
@@ -133,10 +133,12 @@ const Andre = () => {
                 Destroy couch as revenge
               </p>
             </motion.div>
-          </div>
+          </motion.div>
 
-          <div className="flex  h-[100vh] 
-           justify-center items-center mt-[-230px]">
+          <div
+            className="flex  h-[100vh] 
+           justify-center items-center mt-[-270px]"
+          >
             <motion.div
               ref={parallaxContainerRef}
               initial={{ y: 0 }}
@@ -152,7 +154,7 @@ const Andre = () => {
                     ease: "easeInOut",
                   },
                 }}
-                src={images.ty5}
+                src={images.andre5}
                 className="w-[420px] object-cover h-[530px]"
               />
             </motion.div>
@@ -172,8 +174,8 @@ const Andre = () => {
                     ease: "easeInOut",
                   },
                 }}
-                src={images.wedding1}
-                className=" ml-6  w-[450px] object-fill  h-[290px]"
+                src={images.andre4}
+                className=" ml-6  w-[450px] object-cover  h-[290px]"
               />
             </motion.div>
             <motion.div
@@ -191,8 +193,8 @@ const Andre = () => {
                     ease: "easeInOut",
                   },
                 }}
-                src={images.ty4}
-                className="w-[380px] object-cover relative right-12 h-[520px]  "
+                src={images.andre6}
+                className="w-[400px] object-cover relative right-12 h-[520px]  "
               />
               <p className=" absolute bottom-[10px] ml-2 text-white text-lg z-[4000] ">
                 Destroy couch as revenge.Destroy couch as

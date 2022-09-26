@@ -62,15 +62,16 @@ const Types = () => {
             initial={{ y: 0 }}
             style={{ y }}
           >
-            <motion.img
-              initial={{ scale: 1 }}
-              whileHover={{
-                scale: 1.01,
-                transition: {
-                  duration: 1,
-                  ease: "easeInOut",
+             <motion.img
+             initial={{ scale: 1 }}
+             whileHover={{
+               scale: 1.01,
+               transition: {
+                 duration: 1,
+                 ease: "easeInOut",
                 },
               }}
+             
               src={images.ty2}
               className="w-[500px] object-cover h-[400px]"
             />
