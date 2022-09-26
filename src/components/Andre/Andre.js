@@ -60,7 +60,7 @@ const Andre = () => {
       </h1>
       <AnimatePresence>
         <div className="mt-[-00px]  bg-white">
-          <div className="flex pl-[60px] mt-[50px]  h-[100vh]  ">
+          <div className="flex pl-[60px] mt-[-190px]  h-[100vh]  ">
             <motion.div
               ref={parallaxContainerRef}
               initial={{ y: 0 }}

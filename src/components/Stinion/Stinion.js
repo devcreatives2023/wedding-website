@@ -11,11 +11,11 @@ import { images } from "../../constants";
 const calculateMinHeight = (height, range) => {
   return height + height + range;
 };
-const rand = (min = 0, max = 100) => {
+const rand = (min = -10, max = 140) => {
   return Math.floor(Math.random() * (+max - +min)) + +min;
 };
 const Stinion = () => {
-  const range = 1;
+  const range = 2;
   const { scrollY } = useViewportScroll();
   const parallaxContainerRef = useRef(null);
   const [offsetTop, setOffsetTop] = useState(2);
@@ -58,7 +58,9 @@ const Stinion = () => {
         stinion
       </h1>
       <AnimatePresence>
-        <motion.div className="bg-white z-[90] mt-[-140px]">
+        <motion.div className="bg-white z-[90] mt-[-140px]"
+        style={{minHeight}}
+        >
           <div
             className="flex pl-[60px] bg-white h-[100vh]"
             // style={{ minHeight }}
