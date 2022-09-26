@@ -27,35 +27,34 @@ const Home = () => {
           <Types />
         </div>
 
-        <div className="px-[4rem]  p-section mt-[900px] bg-white h-[100vh] ">
+        <div className="px-[4rem]  p-section mt-[1410px] bg-white h-[100vh] ">
           <h1
-            className="capitalize text-[5.5rem]  tracking-wide text-left px-[6rem] sticky 
+            className="capitalize text-[5.5rem] 
+             tracking-wide text-left px-[6rem] sticky 
           z-[20000] text-[gray]"
           >
             stinion
           </h1>
-          <div className="mt-[-90px] relative bg-white  ">
+          <div className="mt-[-110px] relative bg-white  ">
             <Stinion />
           </div>
         </div>
         <div
-          className="px-[4rem]  p-section mt-[900px] 
-        bg-white h-[100vh] "
-        >
+          className="px-[4rem]  p-section mt-[750px] 
+        bg-white h-[100vh]">
           <h1
-            className="capitalize text-[5.5rem]  tracking-wide text-left px-[6rem] sticky 
-          z-[20000] text-[gray]"
-          >
+            className="capitalize text-[5.5rem]  
+            tracking-wide text-left px-[6rem] sticky z-[20000] text-[gray]">
             su Sugolgone
           </h1>
-          <div className="mt-[-90px] relative bg-white  ">
+          <div className="mt-[-130px] relative bg-white  ">
             <Sugolgone />
           </div>
         </div>
-        <div className="px-[4rem]  p-section mt-[990px] bg-white h-[100vh] ">
+        <div className="px-[4rem] p-section mt-[790px] bg-white h-[100vh] ">
           <h1
-            className="capitalize text-[5.5rem]  tracking-wide text-left px-[6rem] sticky 
-          z-[20000] text-[gray]"
+            className="capitalize text-[5.5rem] tracking-wide text-left px-[6rem] sticky 
+            z-[20000] text-[gray]"
           >
             L'Agnata di De Andre'
           </h1>

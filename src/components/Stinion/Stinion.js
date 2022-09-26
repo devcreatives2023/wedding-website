@@ -15,10 +15,10 @@ const rand = (min = 0, max = 100) => {
   return Math.floor(Math.random() * (+max - +min)) + +min;
 };
 const Stinion = () => {
-  const range = 3;
+  const range = 1;
   const { scrollY } = useViewportScroll();
   const parallaxContainerRef = useRef(null);
-  const [offsetTop, setOffsetTop] = useState(0);
+  const [offsetTop, setOffsetTop] = useState(2);
   const [minHeight, setMinHeight] = useState("auto");
   const springConfig = {
     damping: 100,
@@ -58,18 +58,16 @@ const Stinion = () => {
         stinion
       </h1>
       <AnimatePresence>
-        <motion.div className="bg-white z-[90] mt-[-140px]  " 
-         ref={parallaxContainerRef}
-         initial={{ y: 0 }}
-         style={{ y }}
-        >
+        <motion.div className="bg-white z-[90] mt-[-140px]">
           <div
-            className="flex pl-[60px] bg-white h-[100vh]  "
+            className="flex pl-[60px] bg-white h-[100vh]"
             // style={{ minHeight }}
           >
             <motion.div
+              ref={parallaxContainerRef}
+              initial={{ y: 0 }}
+              style={{ y }}
               className="relative z-0 drop-shadow-xl ml-6 overflow-hidden"
-             
             >
               <motion.img
                 initial={{ scale: 1 }}
@@ -81,11 +79,10 @@ const Stinion = () => {
                   },
                 }}
                 src={images.ty2}
-                className="w-[500px] object-cover mt-[40px] h-[300px]"/>
+                className="w-[500px] object-cover mt-[40px] h-[300px]"
+              />
               <p
-                className=" absolute top-[300px] ml-4 text-white text-xl z-[4000] px-2
-                "
-              >
+                className=" absolute top-[300px] ml-4 text-white text-xl z-[4000] px-2">
                 Destroy couch as revenge
               </p>
             </motion.div>
@@ -138,7 +135,8 @@ const Stinion = () => {
             </motion.div>
           </div>
 
-          <div className="flex  bg-white justify-center items-center mt-[-80px]">
+          <div className="flex  bg-white justify-center 
+          items-center mt-[-140px]">
             <motion.div
               className="relative z-1 drop-shadow-xl ml-6 overflow-hidden"
               ref={parallaxContainerRef}

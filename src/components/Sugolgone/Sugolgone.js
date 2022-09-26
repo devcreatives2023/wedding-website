@@ -139,8 +139,8 @@ const Sugolgone = () => {
               </p>
             </motion.div>
           </div>
-
-          <div className="flex  bg-white justify-center items-center mt-[-80px]">
+          <div className="flex  bg-white justify-center items-center 
+          mt-[-180px]">
             <motion.div
               className="relative z-1 drop-shadow-xl ml-6 overflow-hidden"
               ref={parallaxContainerRef}

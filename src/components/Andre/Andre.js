@@ -1,7 +1,55 @@
-import React from "react";
+import React, { useState, useLayoutEffect, useRef } from "react";
+import {
+  motion,
+  useViewportScroll,
+  useTransform,
+  useSpring,
+  AnimatePresence,
+} from "framer-motion";
 import { images } from "../../constants";
-import { motion, AnimatePresence } from "framer-motion";
+
+const calculateMinHeight = (height, range) => {
+  return height + height + range;
+};
+const rand = (min = 0, max = 100) => {
+  return Math.floor(Math.random() * (+max - +min)) + +min;
+};
 const Andre = () => {
+  const range = 3;
+  const { scrollY } = useViewportScroll();
+  const parallaxContainerRef = useRef(null);
+  const [offsetTop, setOffsetTop] = useState(0);
+  const [minHeight, setMinHeight] = useState("auto");
+  const springConfig = {
+    damping: 100,
+    stiffness: 100,
+    mass: rand(1, 4),
+  };
+
+  useLayoutEffect(() => {
+    if (!parallaxContainerRef.current) {
+      return null;
+    }
+    const onResize = () => {
+      setOffsetTop(parallaxContainerRef.current.offsetTop);
+      setMinHeight(
+        calculateMinHeight(parallaxContainerRef.current.offsetTop, range)
+      );
+    };
+    onResize();
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, [parallaxContainerRef]);
+
+  const y = useSpring(
+    useTransform(
+      scrollY,
+      [offsetTop - 500, offsetTop + 500],
+      ["0%", `${range * 30}%`]
+    ),
+    springConfig
+  );
+
   return (
     <div className=" bg-white">
       <h1
@@ -11,10 +59,14 @@ const Andre = () => {
         L'Agnata di De Andre'
       </h1>
       <AnimatePresence>
-
-        <div className="mt-[-300px]  bg-white">
+        <div className="mt-[-00px]  bg-white">
           <div className="flex pl-[60px] mt-[50px]  h-[100vh]  ">
-            <motion.div className="relative z-0 drop-shadow-xl ml-6 overflow-hidden">
+            <motion.div
+              ref={parallaxContainerRef}
+              initial={{ y: 0 }}
+              style={{ y }}
+              className="relative z-0 drop-shadow-xl ml-6 overflow-hidden"
+            >
               <motion.img
                 initial={{ scale: 1 }}
                 whileHover={{
@@ -35,6 +87,9 @@ const Andre = () => {
               </p>
             </motion.div>
             <motion.div
+              ref={parallaxContainerRef}
+              initial={{ y: 0 }}
+              style={{ y }}
               className=" relative z-4 left-[-40px]
              overflow-hidden drop-shadow-xl top-[-120px] "
             >
@@ -52,7 +107,12 @@ const Andre = () => {
               />
             </motion.div>
 
-            <motion.div className="relative z-1  overflow-hidden mt-[40px] drop-shadow-xl ">
+            <motion.div
+              ref={parallaxContainerRef}
+              initial={{ y: 0 }}
+              style={{ y }}
+              className="relative z-1  overflow-hidden mt-[40px] drop-shadow-xl "
+            >
               <motion.img
                 initial={{ scale: 1 }}
                 whileHover={{
@@ -75,11 +135,13 @@ const Andre = () => {
             </motion.div>
           </div>
 
-        
-          <div className="flex  h-[100vh]  justify-center items-center mt-[-80px]">
+          <div className="flex  h-[100vh] 
+           justify-center items-center mt-[-230px]">
             <motion.div
+              ref={parallaxContainerRef}
+              initial={{ y: 0 }}
+              style={{ y }}
               className="relative z-1 drop-shadow-xl ml-6 overflow-hidden"
-              
             >
               <motion.img
                 initial={{ scale: 1 }}
@@ -95,8 +157,10 @@ const Andre = () => {
               />
             </motion.div>
             <motion.div
+              ref={parallaxContainerRef}
+              initial={{ y: 0 }}
+              style={{ y }}
               className=" relative z-4 drop-shadow-xl overflow-hidden  top-[-30px]"
-              
             >
               <motion.img
                 initial={{ scale: 1 }}
@@ -113,8 +177,10 @@ const Andre = () => {
               />
             </motion.div>
             <motion.div
+              ref={parallaxContainerRef}
+              initial={{ y: 0 }}
+              style={{ y }}
               className="relative z-1 drop-shadow-xl overflow-hidden "
-              
             >
               <motion.img
                 initial={{ scale: 1 }}
