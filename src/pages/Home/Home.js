@@ -42,30 +42,33 @@ const Home = () => {
           </div>
         </div>
         <div
-          className="px-[4rem]  p-section mt-[750px] 
+          className="px-[4rem]  p-section xl:mt-[750px] lg:mt-[750px] mt-[630px] 
         bg-white h-[100vh]">
           <h1
-            className="capitalize text-[5.5rem]  
-            tracking-wide text-left px-[6rem] sticky z-[20000] text-[gray]">
+            className="capitalize xl:text-[5.5rem] lg:text-[5.5rem] text-[2.7rem] 
+            tracking-wide xl:text-left xl:px-[6rem] lg:px-[6rem] sticky z-[20000] text-[gray]">
             su Sugolgone
           </h1>
-          <div className="mt-[-130px] relative bg-white  ">
+          <div className="xl:mt-[-130px] lg:mt-[-130px] relative bg-white  ">
             <Sugolgone />
           </div>
         </div>
-        <div className="px-[4rem] p-section mt-[790px] bg-white h-[100vh] ">
+        <div className="xl:px-[4rem] lg:px-[4rem] xl:p-section lg:p-section
+        xl:mt-[790px] lg:mt-[790px] mt-[1150px] bg-white h-[100vh] ">
           <h1
-            className="capitalize xl:text-[5.5rem] lg:text-[5.5rem] md:text-[4rem] tracking-wide text-left px-[6rem] sticky 
+            className="capitalize xl:text-[5.5rem] lg:text-[5.5rem] md:text-[4rem]
+            text-[2rem]
+            tracking-wide text-left xl:px-[6rem] px-6 lg:px-[6rem] sticky 
             z-[20000] text-[gray]"
           >
             L'Agnata di De Andre'
           </h1>
-          <div className="mt-[-30px] relative bg-white  ">
+          <div className="xl:mt-[-30px] lg:mt-[-30px] mt-[120px] relative bg-white  ">
             <Andre />
           </div>
         </div>
-        <div className=" bg-white relative  h-[200vh]">
-          <div className="  h-[50vh]">
+        <div className=" bg-white relative  xl:h-[200vh] lg:h-[200vh] h-[100vh]">
+          <div className="  xl:h-[50vh] lg:h-[50vh] h-[30vh]">
             <Location />
           </div>
 

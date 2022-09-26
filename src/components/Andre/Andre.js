@@ -55,13 +55,16 @@ const Andre = () => {
       <h1
         className="capitalize xl:text-[8rem]
         lg:text-[7rem] 
+        text-[3rem]
+        mt-[-150px]
+        xl:mt-0 lg:mt-0
         flex justify-end  items-end  ml-[20px] tracking-wider text-[#eee]"
       >
         L'Agnata di De Andre'
       </h1>
       <AnimatePresence>
         <div className="mt-[-00px]  bg-white">
-          <motion.div className="flex pl-[60px] mt-[-190px]  h-[100vh]  ">
+          <motion.div className="flex xl:pl-[60px] lg:pl-[60px] mt-[-190px]  h-[100vh]  ">
             <motion.div
               ref={parallaxContainerRef}
               initial={{ y: 0 }}
@@ -73,15 +76,17 @@ const Andre = () => {
                 whileHover={{
                   scale: 1.01,
                   transition: {
-                  duration: 1,
-                  ease: "easeInOut",
+                    duration: 1,
+                    ease: "easeInOut",
                   },
                 }}
                 src={images.andre3}
                 className="w-[500px] object-cover mt-[40px] h-[300px]"
               />
               <p
-                className=" absolute top-[300px] ml-4 text-white text-xl z-[4000] px-2
+                className=" absolute top-[300px] xl:ml-4 lg:ml-4 
+                text-[14px]
+                text-white xl:text-xl lg:text-xl z-[4000] px-2
               "
               >
                 Destroy couch as revenge
@@ -99,8 +104,8 @@ const Andre = () => {
                 whileHover={{
                   scale: 1.01,
                   transition: {
-                  duration: 1,
-                  ease:"easeInOut",
+                    duration: 1,
+                    ease: "easeInOut",
                   },
                 }}
                 src={images.andre1}
@@ -128,7 +133,8 @@ const Andre = () => {
                 className="w-[420px] object-cover relative right-5 h-[250px]  "
               />
               <p
-                className=" absolute top-[210px] ml-4 text-white text-xl z-[4000] px-2
+                className=" absolute top-[210px] xl:ml-4 lg:ml-4
+                 text-white xl:text-xl lg:text-xl text-[14px] z-[4000] xl:px-2 lg:px-2
            "
               >
                 Destroy couch as revenge
@@ -138,7 +144,7 @@ const Andre = () => {
 
           <div
             className="flex  h-[100vh] 
-           justify-center items-center mt-[-270px]"
+           justify-center items-center xl:mt-[-270px] lg:mt-[-270px] mt-[-350px]"
           >
             <motion.div
               ref={parallaxContainerRef}
@@ -156,7 +162,7 @@ const Andre = () => {
                   },
                 }}
                 src={images.andre5}
-                className="w-[420px] object-cover h-[530px]"
+                className="w-[420px] object-cover xl:h-[530px] lg:h-[530px] h-[400px]"
               />
             </motion.div>
             <motion.div
@@ -195,7 +201,7 @@ const Andre = () => {
                   },
                 }}
                 src={images.andre6}
-                className="w-[400px] object-cover relative right-12 h-[520px]  "
+                className="w-[400px] object-cover relative right-12 xl:h-[520px] lg:h-[520px]  "
               />
               <p className=" absolute bottom-[10px] ml-2 text-white text-lg z-[4000] ">
                 Destroy couch as revenge.Destroy couch as
