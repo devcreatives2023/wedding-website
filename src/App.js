@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { icons } from "./constants";
 import { Home } from "./pages";
-import { Text, Xd } from "./components";
+import { Footer, Text, Xd } from "./components";
 const App = () => {
   // change cursor style
   const delay = 18;
@@ -95,7 +95,7 @@ const App = () => {
             </Route>
           </Routes>
         </BrowserRouter>
-        
+        <Footer />
       </div>
     </>
   );

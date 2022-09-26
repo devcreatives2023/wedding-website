@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useState, useRef } from "react";
 import {
   Andre,
+  Checklist,
   Header,
   Location,
   Stinion,
@@ -37,8 +38,10 @@ const Home = () => {
             <Stinion />
           </div>
         </div>
-        <div className="px-[4rem]  p-section mt-[900px] 
-        bg-white h-[100vh] ">
+        <div
+          className="px-[4rem]  p-section mt-[900px] 
+        bg-white h-[100vh] "
+        >
           <h1
             className="capitalize text-[5.5rem]  tracking-wide text-left px-[6rem] sticky 
           z-[20000] text-[gray]"
@@ -60,13 +63,16 @@ const Home = () => {
             <Andre />
           </div>
         </div>
-        <div className=" bg-white relative  h-[200vh]"> 
-         <div className="  bg-white h-[50vh]">
-          <Location />
-        </div>
+        <div className=" bg-white relative  h-[200vh]">
+          <div className="  h-[50vh]">
+            <Location />
+          </div>
+
+          <div className=" relative h-[140vh]  top-[300px] w-[90%] m-auto  overflow-hidden">
+            <Checklist />
+             </div>
         </div>
       </div>
-       
     </div>
   );
 };

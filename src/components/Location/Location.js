@@ -3,18 +3,10 @@ import { images } from "../../constants";
 import { Carousel } from "../../components";
 const Location = () => {
   return (
-    <div className="">
-      <div className=" brightness-50">
-        <img
-          src={images.locationbg}
-          className="opacity-[1]
-       h-[95vh] relative w-screen"
-        />
-      </div>
-      <div className="  absolute top-[-130px] ml-[130px]  flex justify-center items-center">
-        <h1 className=" text-[21rem] text-[#eeeeee3a]">Loaction</h1>
-      </div>
-      <div className=" absolute top-[6%]">
+    <div className="  app__home-location relative">
+      <div className=" brightness-50  bg-[#00000082] w-[100%] h-[100%]" />
+        <h1 className="ml-[130px] z-0 absolute  flex justify-center items-center text-[21rem] -top-[130px] text-[#eeeeee3a]">Loaction</h1>
+      <div className=" absolute z-1 ">
         <Carousel />
       </div>
     </div>

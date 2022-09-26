@@ -15,6 +15,12 @@ import carousel1 from "./images/car1.jpg";
 import carousel2 from "./images/car2.jpg";
 import carousel3 from "./images/car3.jpg";
 import carousel4 from "./images/car4.jpg";
+// checklist
+import checklist from "./images/ch.jpg";
+
+// footer
+import footerbg from './images/footer.jpg'
+
 export default {
   headervideo,
   header,
@@ -32,4 +38,6 @@ export default {
   carousel2,
   carousel3,
   carousel4,
+  checklist,
+  footerbg
 };

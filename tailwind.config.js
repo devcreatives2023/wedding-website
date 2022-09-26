@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         main: "'Spectral', serif",
         logo: " 'Henny Penny', cursive",
+        footer: "'Inter Tight', sans-serif",
       },
       padding: {
         logo: "1rem 4rem ",
@@ -14,7 +15,9 @@ module.exports = {
         sm: "1rem 2rem",
         section: "6rem  0",
       },
-      margin: {},
+      backgroundColor: {
+        xd: "rgb(90, 189, 178)",
+      },
       screens: {
         xsm: "445px",
         sm: "665px",
