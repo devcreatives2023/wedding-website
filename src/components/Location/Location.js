@@ -9,7 +9,7 @@ const Location = () => {
         <h1 className="xl:ml-[130px] lg:ml-[130px]
          z-0 absolute  flex justify-center items-center xl:text-[21rem] lg:text-[21rem]
           text-[6rem]
-          xl:-top-[130px] lg:-top-[130px] top-[40px] text-[#eeeeee3a]">Loaction</h1>
+          xl:-top-[130px] lg:-top-[130px] top-[40px] text-[#eeeeee3a]">Location</h1>
       <div className=" absolute z-1 ">
         <Carousel />
       </div>

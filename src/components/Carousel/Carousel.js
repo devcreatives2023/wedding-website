@@ -21,7 +21,7 @@ const Carousel = () => {
   React.useEffect(() => {});
   return (
     <div className="relative overflow-hidden w-[100%] flex justify-center items-center
-     xl:mt-[-42%] lg:mt-[-42%] md:mt-[-520px] mt-[-400px]  xl:left-[25%] lg:left-[25%]  z-0">
+     xl:mt-[-42%] lg:mt-[-42%] md:mt-[-520px] mt-[-450px]  xl:left-[25%] lg:left-[25%]  z-0">
       <AnimatePresence>
         {data.carousel.map((item, index) => {
           return (
