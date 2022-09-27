@@ -55,7 +55,7 @@ const Sugolgone = () => {
       <h1
         className="capitalize xl:text-[11rem]
         lg:text-[10rem] md:text-[9rem]
-        text-[3rem]
+        text-[3rem] mt-[-60px] xl:mt-0 lg:mt-0
         flex jxl:ustify-end items-end text-right tracking-wider text-[#eee]"
       >
         Su golgone

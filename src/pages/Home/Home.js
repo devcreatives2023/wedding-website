@@ -15,7 +15,7 @@ const Home = () => {
         <Header />
       </div>
 
-      <div className=" relative z-[100] bg-white mt-10 xl:mt-0 lg:mt-0  ">
+      <div className=" relative z-[100] bg-white mt-12  xl:mt-0 lg:mt-0  ">
         <div className="xl:px-[4rem] lg:px-[4rem] xl:p-section lg:p-section">
           <h1 className="capitalize xl:text-[5rem] lg:text-[5rem] text-[2rem]
             tracking-wide text-left xl:px-[6rem] lg:px-[6rem] sticky z-[20000] text-[gray]">
@@ -52,7 +52,7 @@ const Home = () => {
         bg-white h-[100vh]">
           <h1
             className="capitalize xl:text-[5.5rem] lg:text-[5.5rem] text-[2.7rem] 
-            tracking-wide xl:text-left xl:px-[6rem] lg:px-[6rem] 
+            tracking-wide xl:text-left xl:px-[6rem] lg:px-[6rem]  
             sticky z-[20000] text-[gray]">
             su Sugolgone
           </h1>
@@ -64,7 +64,7 @@ const Home = () => {
         xl:mt-[790px] lg:mt-[790px] mt-[1150px] bg-white h-[100vh] ">
           <h1
             className="capitalize xl:text-[5.5rem] lg:text-[5.5rem] md:text-[4rem]
-            text-[2rem] xl:mt-0 lg:mt-0 mt-[-460px] 
+            text-[2rem] xl:mt-0 lg:mt-0 mt-[-530px] 
             tracking-wide text-left xl:px-[6rem] px-6 lg:px-[6rem] sticky 
             z-[20000] text-[gray]"
           >

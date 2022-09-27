@@ -124,7 +124,7 @@ const Stinion = () => {
             </motion.div>
 
             <motion.div
-              className="relative z-1  overflow-hidden xl:mt-[40px] lg:mt-[40px]
+              className="relative z-1  overflow-hidden xl:mt-[40px] mt-[-100px] lg:mt-[40px]
               drop-shadow-xl "
               ref={parallaxContainerRef}
               initial={{ y: 0 }}
@@ -141,10 +141,10 @@ const Stinion = () => {
                 }}
                 src={images.weddin5}
                 className="xl:w-[420px] lg:w-[420px]
-                w-[280px]
+                w-[180px]
                 object-cover relative 
                 lg:right-5
-                left-0 
+                right-[-120px]
                 xl:right-5 xl:h-[190px] lg:h-[190px] brightness-75  "
               />
               <p
