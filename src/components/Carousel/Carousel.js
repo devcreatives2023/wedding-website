@@ -1,6 +1,7 @@
 import React from "react";
 import { data, icons } from "../../constants";
 import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Carousel = () => {
   const [current, setCurrent] = React.useState(0);

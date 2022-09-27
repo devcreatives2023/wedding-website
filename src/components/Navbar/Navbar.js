@@ -18,7 +18,7 @@ const variants = {
 
 const middleline = {
   default: {
-    x: -200,
+    x: -400,
     transition: {
       duration: 0.5,
     },
@@ -132,9 +132,8 @@ const Navbar = () => {
           xl:items-center lg:items-center
         xl:h-[780px] lg:h-[780px]
         uppercase font-normal "
-          style={{ boxShadow: "3px 3px 19px #77787A, -3px -3px 19px #FFFFFF" }}
         >
-          <ul className="  flex flex-col justify-around xl:text-[2rem]
+          <ul className=" xl:ml-[-250px] lg:ml-[-250px]  flex flex-col justify-around xl:text-[2rem]
            lg:text-[2rem] tracking-wider   text-[#000000a5]">
             <motion.li
               initial="default"
@@ -144,8 +143,8 @@ const Navbar = () => {
               cursor-pointer relative m-[0 auto] grid justify-center items-center
               overflow-hidden"
             >
-              <Link to="" className=" grid-rows-1 grid-cols-1">
-                Shopping
+              <Link to="/shoot" className=" grid-rows-1 grid-cols-1">
+                Shooting
               </Link>
               <motion.div
                 variants={middleline}
@@ -163,7 +162,7 @@ const Navbar = () => {
               overflow-hidden"
             >
               <Link to="" className=" grid-rows-1 grid-cols-1">
-                Shopping
+                wedding day
               </Link>
               <motion.div
                 variants={middleline}
@@ -181,8 +180,8 @@ const Navbar = () => {
               justify-center items-center
               overflow-hidden"
             >
-              <Link to="" className=" grid-rows-1 grid-cols-1">
-                Shopping
+              <Link to="locations" className=" grid-rows-1 grid-cols-1">
+                location
               </Link>
               <motion.div
                 variants={middleline}
@@ -200,7 +199,7 @@ const Navbar = () => {
               overflow-hidden"
             >
               <Link to="" className=" grid-rows-1 grid-cols-1">
-                Shopping
+                professionisti
               </Link>
               <motion.div
                 variants={middleline}
@@ -218,7 +217,7 @@ const Navbar = () => {
               overflow-hidden"
             >
               <Link to="" className=" grid-rows-1 grid-cols-1">
-                Shopping
+                emozioni
               </Link>
               <motion.div
                 variants={middleline}
@@ -237,7 +236,7 @@ const Navbar = () => {
               overflow-hidden"
             >
               <Link to="" className=" grid-rows-1 grid-cols-1">
-                Shopping
+                progetto
               </Link>
               <motion.div
                 variants={middleline2}
@@ -255,7 +254,7 @@ const Navbar = () => {
               overflow-hidden"
             >
               <Link to="" className=" grid-rows-1 grid-cols-1">
-                Shopping
+                social wall
               </Link>
               <motion.div
                 variants={middleline2}
@@ -274,7 +273,7 @@ const Navbar = () => {
               overflow-hidden"
             >
               <Link to="" className=" grid-rows-1 grid-cols-1">
-                Shopping
+                press area
               </Link>
               <motion.div
                 variants={middleline2}
@@ -292,7 +291,7 @@ const Navbar = () => {
               overflow-hidden"
             >
               <Link to="" className=" grid-rows-1 grid-cols-1">
-                Shopping
+                marketing
               </Link>
               <motion.div
                 variants={middleline2}
@@ -310,7 +309,7 @@ const Navbar = () => {
               overflow-hidden"
             >
               <Link to="" className=" grid-rows-1 grid-cols-1">
-                Shopping
+                contatti
               </Link>
               <motion.div
                 variants={middleline2}
