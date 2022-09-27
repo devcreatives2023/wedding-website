@@ -113,21 +113,29 @@ const Navbar = () => {
         variants={variants}
         animate={show ? "opened" : "closed"}
         className="fixed  w-[100%] h-[100%] bottom-0 top-0 p-10  flex-col 
-        z-1 flex cursor-pointer items-center  right-0  text-center  bg-[#fffffff0]"
+        z-1 flex cursor-pointer xl:items-center lg:items-center 
+        xl:right-0 lg:right-0  right-0 text-center   items-center bg-[#fffffff0]"
       >
         <button
-          className=" cursor-pointer absolute right-10 top-[-20px] text-[2rem] text-[gray] pt-10  "
+          className=" cursor-pointer absolute right-10 top-[-20px]
+           text-[2rem] text-[gray] pt-10  "
           onClick={() => setShow(!show)}
         >
           <icons.GiTireIronCross />
         </button>
         <motion.div
-          className=" bg-white w-[65%] flex  p-[50px] justify-around text-[1.5rem] 
-        h-[780px]
+          className=" bg-white xl:w-[65%] w-screen lg:w-[65%] flex 
+          flex-col xl:flex-row lg:flex-row  xl:p-[50px] lg:p-[50px] p-[60px]
+           xl:justify-around
+          lg:justify-around text-[1.5rem] 
+          justify-center items-start
+          xl:items-center lg:items-center
+        xl:h-[780px] lg:h-[780px]
         uppercase font-normal "
           style={{ boxShadow: "3px 3px 19px #77787A, -3px -3px 19px #FFFFFF" }}
         >
-          <ul className="  flex flex-col justify-around text-[2rem] tracking-wider   text-[#000000a5]">
+          <ul className="  flex flex-col justify-around xl:text-[2rem]
+           lg:text-[2rem] tracking-wider   text-[#000000a5]">
             <motion.li
               initial="default"
               whileHover="hover"
@@ -219,7 +227,7 @@ const Navbar = () => {
               />
             </motion.li>
           </ul>
-          <ul className="  flex flex-col justify-around text-[2rem] tracking-wider   text-[#000000a5]">
+          <ul className="  flex flex-col justify-around xl:text-[2rem] lg:text-[2rem] tracking-wider   text-[#000000a5]">
             <motion.li
               initial="default"
               whileHover="hover"
@@ -310,7 +318,7 @@ const Navbar = () => {
                  h-[2px] relative left-0 w-[100%] z-1 mt-[-23px]"
               />
             </motion.li>
-          </ul>{" "}
+          </ul>
         </motion.div>
       </motion.nav>
     </div>
