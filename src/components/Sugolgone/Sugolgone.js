@@ -66,7 +66,7 @@ const Sugolgone = () => {
           className="bg-white z-[90] xl:mt-[-140px] lg:mt-[-90px]  mt-[-170px]  "
         >
           <div
-            className="flex xl:flex-row lg:flex-ro flex-col pl-[60px] bg-white h-[100vh]  "
+            className="flex xl:flex-row lg:flex-row flex-col pl-[60px] bg-white h-[100vh]  "
             // style={{ minHeight }}
           >
             <motion.div
@@ -87,10 +87,10 @@ const Sugolgone = () => {
                   },
                 }}
                 src={images.rose2}
-                className="xl:w-[500px] lg:w-[500px] object-cover xl:mt-[40px] lg:mt-[40px] mt-[70px]
+                className="xl:w-[500px] lg:w-[500px] 
+                object-cover xl:mt-[40px] lg:mt-[40px] mt-[70px]
                 lg:h-[300px]
                 h-[190px]
-
                 xl:h-[300px]"
               />
               <p
@@ -103,7 +103,7 @@ const Sugolgone = () => {
               </p>
             </motion.div>
             <motion.div
-              className=" relative z-4 xl:left-[-40px] lg:left-[-40px] left-[-90px]
+              className=" relative z-4 xl:left-[-40px] lg:left-[-20px] left-[-90px]
                overflow-hidden drop-shadow-xl xl:top-[-120px] lg:top-[-120px] top-[10px] "
               ref={parallaxContainerRef}
               initial={{ y: 0 }}
@@ -119,7 +119,7 @@ const Sugolgone = () => {
                   },
                 }}
                 src={images.rose3}
-                className=" xl:ml-6 lg:ml-6  xl:w-[420px] lg:w-[420px]
+                className=" xl:ml-6 lg:ml-6 xl:w-[420px] lg:w-[420px]
                 lg:h-[600px]
                 w-[150px] h-[200px]
                 object-cover  brightness-75 xl:h-[600px]"
@@ -129,7 +129,7 @@ const Sugolgone = () => {
             <motion.div
               className="relative z-1  overflow-hidden xl:mt-[40px] lg:mt-[40px] mt-[-190px] 
               drop-shadow-xl
-              ml-[50px] xl:ml-0 lg-ml-0
+              ml-[50px] xl:ml-0 lg:ml-0
               "
               ref={parallaxContainerRef}
               initial={{ y: 0 }}
