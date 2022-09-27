@@ -15,14 +15,16 @@ const Home = () => {
         <Header />
       </div>
 
-      <div className=" relative z-[100] bg-white ">
+      <div className=" relative z-[100] bg-white mt-10 xl:mt-0 lg:mt-0  ">
         <div className="xl:px-[4rem] lg:px-[4rem] xl:p-section lg:p-section">
           <h1 className="capitalize xl:text-[5rem] lg:text-[5rem] text-[2rem]
             tracking-wide text-left xl:px-[6rem] lg:px-[6rem] sticky z-[20000] text-[gray]">
             villa las tronas
           </h1>
-          <h1 className="capitalize xl:text-[11rem] lg:text-[11rem] text-[2rem]
-           absolute  xl:top-[90px] lg:top-[90px] xl:left-[190px] lg:left-[190px] tracking-wider text-[#eee]">
+          <h1 className="capitalize xl:text-[11rem] lg:text-[11rem] text-[3rem]
+           absolute  xl:top-[90px] 
+           top-[-5px]
+           lg:top-[90px] xl:left-[190px] lg:left-[190px] tracking-wider text-[#eee]">
             villa las tronas
           </h1>
 
@@ -30,11 +32,13 @@ const Home = () => {
         </div>
 
         <div className="px-[4rem]  p-section xl:mt-[1410px] 
-        
-        lg:mt-[1410px] mt-[1140px] bg-white h-[100vh] ">
+          w-screen      
+        lg:mt-[1410px] mt-[1040px] bg-white h-[100vh] ">
           <h1
             className="capitalize xl:text-[5.5rem] lg:text-[5.5rem] text-[2rem] 
-             tracking-wide xl:text-left lg:text-left xl:px-[6rem] lg:px-[6rem] sticky 
+             tracking-wide xl:text-left lg:text-left xl:px-[6rem] lg:px-[6rem] px-0
+             ml-[-30px] xl:ml-0 lg:ml-0
+             sticky 
           z-[20000] text-[gray]"
           >
             stinion
@@ -75,7 +79,8 @@ const Home = () => {
             <Location />
           </div>
 
-          <div className=" relative xl:h-[140vh] h-[100vh] lg:h-[140vh] top-[-300px] 
+          <div className=" relative xl:h-[140vh] h-[100vh] lg:h-[140vh] 
+          top-[-100px] 
            xl:top-[300px] lg:top-[300px]  w-[100%] m-auto  overflow-hidden">
             <Checklist />
              </div>
