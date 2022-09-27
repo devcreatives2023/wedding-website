@@ -20,7 +20,7 @@ const Checklist = () => {
         <p
           className=" text-[red] absolute xl:text-[9rem] lg:text-[9rem]
           text-[3.5rem]
-          xl:ml-10 lg:ml-10 xl:bottom-[150px]  
+          xl:ml-10 lg:ml-10 xl:bottom-[190px]  
           lg:bottom-[150px]
           bottom-[250px]
           
