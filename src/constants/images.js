@@ -48,7 +48,15 @@ import andre3 from "./images/m6.jpg";
 import andre4 from "./images/andr1.jpg";
 import andre5 from "./images/andr3.jpg";
 import andre6 from "./images/mr2.jpg";
-
+// locatios page
+import l1 from "./images/l1.jpg";
+import l2 from "./images/l2.jpg";
+import l3 from "./images/l3.jpg";
+import l4 from "./images/l4.jpg";
+import l5 from "./images/l5.jpg";
+import l6 from "./images/l6.jpg";
+import l7 from "./images/l7.jpg";
+import l8 from "./images/l8.jpg";
 export default {
   andre1,
   andre2,
@@ -91,4 +99,11 @@ export default {
   rose4,
   rose5,
   rose6,
+  l1,
+  l2,
+  l3,
+  l4,
+  l5,
+  l6,
+  l7,l8
 };
