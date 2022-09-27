@@ -22,26 +22,27 @@ const Progetto = () => {
           duration: 0.6,
         },
       }}
-      exit={{opacity:0}}
+      exit={{ opacity: 0 }}
     >
       <>
         <Navbar />
       </>
-
-      <div className=" xl:p-[7rem] lg:p-[7rem] p-[2rem] mt-[90px] xl:mt-0 lg:mt-0">
-        <h1 className="relative z-10 lg:text-[5rem] xl:text-[5rem] xl:px-[3rem] lg:px-[3rem] text-[3rem] text-[#000000aa]">
+      Progetto
+      <div className=" flex flex-col justify-center xl:px-[12rem] lg:px-[12rem] px-0">
+        <h1
+          className="relative z-10 xl:text-[4.7rem] lg:text-[4.7rem] text-[2rem] 
+        text-[#696969] text-left mt-[90px] "
+        >
           Progetto
         </h1>
         <h1
-          className="z-0 xl:top-[-130px] lg:top-[-130px] relative  xl:text-center
-        lg:text-center
-        xl:text-[13rem] lg:text-[13rem] text-[8rem] text-[#eee] h-[100px]"
+          className="z-0 xl:text-[14rem] lg:text-[14rem] text-[5rem] relative top-[-40px]
+         xl:top-[-130px] lg:top-[-130px]  h-[170px] text-[#eee]  xl:text-center lg:text-center"
         >
           Progetto
         </h1>
       </div>
-
-      <div className=" relative  xl:top-[-150px] lg:top-[-150px] top-[-30px] xl:px-[6rem] lg:px-[6rem]">
+      <div className=" relative  xl:top-[-80px] lg:top-[-150px] top-[-30px] xl:px-[6rem] lg:px-[6rem]">
         <video
           autoPlay
           controls
@@ -123,11 +124,29 @@ const Progetto = () => {
           </div>
         </div>
         <div className=" flex flex-col xl:flex-row gap-5 lg:flex-row justify-between items-center mt-10 xl:mt-0 lg:mt-0">
-          <img
+          <motion.img
+            initial={{ y: 0 }}
+            whileInView={{
+              y: -65,
+              transition: {
+                duration: 5,
+                ease: "easeInOut",
+              },
+            }}
+            exit={{ y: 0 }}
             src={images.andre2}
             className="xl:h-[400px] lg:h-[400px] object-cover xl:w-[600px] lg:w-[600px] w-[400px]"
           />
-          <img
+          <motion.img
+            initial={{ y: 0 }}
+            whileInView={{
+              y: -65,
+              transition: {
+                duration: 5,
+                ease: "easeInOut",
+              },
+            }}
+            exit={{ y: 0 }}
             src={images.weddin5}
             className=" h-[200px] xl:h-[400px] lg:h-[400px] xl:mt-0 lg:mt-0 mt-10 object-cover xl:w-[600px] lg:w-[600px] w-[400px]"
           />

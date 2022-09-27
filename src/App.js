@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { icons } from "./constants";
-import { Home, LocationOzieri, Locations, Partners, Progetto, Shooting } from "./pages";
+import { Home, LocationOzieri, Locations, Partners, Progetto, Shooting, SocialWall } from "./pages";
 import { Footer, Text, Xd } from "./components";
 const App = () => {
   // change cursor style
@@ -103,6 +103,7 @@ const App = () => {
 
               <Route  path="Partners" element={<Partners />}  />
               <Route  path="progetto" element={<Progetto />}  />
+              <Route  path="social" element={<SocialWall />}  />
             </Route>
           </Routes>
         </BrowserRouter>

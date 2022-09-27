@@ -268,7 +268,7 @@ const Navbar = () => {
               cursor-pointer relative m-[0 auto] grid justify-center items-center
               overflow-hidden"
               >
-                <Link to="" className=" grid-rows-1 grid-cols-1">
+                <Link to="/social" className=" grid-rows-1 grid-cols-1">
                   social wall
                 </Link>
                 <motion.div
