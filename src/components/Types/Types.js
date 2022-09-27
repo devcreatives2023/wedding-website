@@ -51,7 +51,7 @@ const Types = () => {
   );
   return (
     <AnimatePresence>
-      <div className=" absolute z-[90]  ">
+      <div className=" absolute z-[90] w-screen ">
         <div
           className="flex xl:flex-row lg:flex-row flex-col  ml-5"
           // style={{ minHeight }}

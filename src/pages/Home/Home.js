@@ -10,7 +10,7 @@ import {
 } from "../../components";
 const Home = () => {
   return (
-    <div className=" flex flex-col justify-between">
+    <div className=" flex flex-col justify-between ">
       <div>
         <Header />
       </div>
@@ -26,10 +26,12 @@ const Home = () => {
             villa las tronas
           </h1>
 
-          <Types />
+          <Types /> 
         </div>
 
-        <div className="px-[4rem]  p-section xl:mt-[1410px] lg:mt-[1410px] mt-[1100px] bg-white h-[100vh] ">
+        <div className="px-[4rem]  p-section xl:mt-[1410px] 
+        
+        lg:mt-[1410px] mt-[1140px] bg-white h-[100vh] ">
           <h1
             className="capitalize xl:text-[5.5rem] lg:text-[5.5rem] text-[2rem] 
              tracking-wide xl:text-left lg:text-left xl:px-[6rem] lg:px-[6rem] sticky 
@@ -37,16 +39,17 @@ const Home = () => {
           >
             stinion
           </h1>
-          <div className="mt-[-110px] relative bg-white  ">
+          <div className="xl:mt-[-110px] lg:mt-[-110px] mt-[-70px] relative bg-white  ">
             <Stinion />
           </div>
         </div>
         <div
-          className="px-[4rem]  p-section xl:mt-[750px] lg:mt-[750px] mt-[630px] 
+          className="px-[4rem]  p-section xl:mt-[750px] lg:mt-[750px] mt-[490px] 
         bg-white h-[100vh]">
           <h1
             className="capitalize xl:text-[5.5rem] lg:text-[5.5rem] text-[2.7rem] 
-            tracking-wide xl:text-left xl:px-[6rem] lg:px-[6rem] sticky z-[20000] text-[gray]">
+            tracking-wide xl:text-left xl:px-[6rem] lg:px-[6rem] 
+            sticky z-[20000] text-[gray]">
             su Sugolgone
           </h1>
           <div className="xl:mt-[-130px] lg:mt-[-130px] relative bg-white  ">
@@ -57,7 +60,7 @@ const Home = () => {
         xl:mt-[790px] lg:mt-[790px] mt-[1150px] bg-white h-[100vh] ">
           <h1
             className="capitalize xl:text-[5.5rem] lg:text-[5.5rem] md:text-[4rem]
-            text-[2rem]
+            text-[2rem] xl:mt-0 lg:mt-0 mt-[-460px] 
             tracking-wide text-left xl:px-[6rem] px-6 lg:px-[6rem] sticky 
             z-[20000] text-[gray]"
           >
@@ -68,13 +71,13 @@ const Home = () => {
           </div>
         </div>
         <div className=" bg-white relative  xl:h-[200vh] lg:h-[200vh] h-[100vh]">
-          <div className="  xl:h-[50vh] lg:h-[50vh] h-[30vh]">
+          <div className="  xl:h-[50vh] lg:h-[50vh] h-[90vh]">
             <Location />
           </div>
 
-          <div className=" relative xl:h-[140vh] lg:h-[140vh] h-[50vh] 
-           top-[300px] w-[100%] m-auto  overflow-hidden">
-            {/* <Checklist /> */}
+          <div className=" relative xl:h-[140vh] h-[100vh] lg:h-[140vh] top-[-300px] 
+           xl:top-[300px] lg:top-[300px]  w-[100%] m-auto  overflow-hidden">
+            <Checklist />
              </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { images } from "../../constants";
 const Header = () => {
   return (
     <>
-      <div className="relative xl:h-[99vh] lg:h-[90vh] h-[40vh] xl:w-[100%]  ">
+      <div className="relative xl:h-[99vh] lg:h-[90vh] h-[40vh] xl:w-[100%] w-screen  ">
         <video
           muted
           controls

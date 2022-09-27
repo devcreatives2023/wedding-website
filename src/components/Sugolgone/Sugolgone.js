@@ -51,12 +51,12 @@ const Sugolgone = () => {
   );
 
   return (
-    <div className="h-[40vh] ">
+    <div className="h-[40vh] w-screen ">
       <h1
         className="capitalize xl:text-[11rem]
         lg:text-[10rem] md:text-[9rem]
         text-[3rem]
-        flex justify-end items-end text-right tracking-wider text-[#eee]"
+        flex jxl:ustify-end items-end text-right tracking-wider text-[#eee]"
       >
         Su golgone
       </h1>
@@ -70,7 +70,9 @@ const Sugolgone = () => {
             // style={{ minHeight }}
           >
             <motion.div
-              className="relative z-0 drop-shadow-xl xl:ml-6 lg:ml-6 overflow-hidden"
+              className="relative z-0 drop-shadow-xl xl:ml-6 lg:ml-6 
+              ml-[-90px]
+              overflow-hidden"
               ref={parallaxContainerRef}
               initial={{ y: 0 }}
               style={{ y }}
@@ -85,9 +87,10 @@ const Sugolgone = () => {
                   },
                 }}
                 src={images.rose2}
-                className="xl:w-[500px] lg:w-[500px] object-cover mt-[40px]
+                className="xl:w-[500px] lg:w-[500px] object-cover xl:mt-[40px] lg:mt-[40px] mt-[70px]
                 lg:h-[300px]
-                h-[290px]
+                h-[190px]
+
                 xl:h-[300px]"
               />
               <p
@@ -100,8 +103,8 @@ const Sugolgone = () => {
               </p>
             </motion.div>
             <motion.div
-              className=" relative z-4 left-[-40px]
-               overflow-hidden drop-shadow-xl xl:top-[-120px] lg:top-[-120px] top-[-30px] "
+              className=" relative z-4 xl:left-[-40px] lg:left-[-40px] left-[-90px]
+               overflow-hidden drop-shadow-xl xl:top-[-120px] lg:top-[-120px] top-[10px] "
               ref={parallaxContainerRef}
               initial={{ y: 0 }}
               style={{ y }}
@@ -118,15 +121,16 @@ const Sugolgone = () => {
                 src={images.rose3}
                 className=" xl:ml-6 lg:ml-6  xl:w-[420px] lg:w-[420px]
                 lg:h-[600px]
+                w-[150px] h-[200px]
                 object-cover  brightness-75 xl:h-[600px]"
               />
             </motion.div>
 
             <motion.div
-              className="relative z-1  overflow-hidden xl:mt-[40px] lg:mt-[40px] mt-[-80px] 
-              mr-[-40px]
-              xl:mr-0 lg:mr-0
-              drop-shadow-xl "
+              className="relative z-1  overflow-hidden xl:mt-[40px] lg:mt-[40px] mt-[-190px] 
+              drop-shadow-xl
+              ml-[50px] xl:ml-0 lg-ml-0
+              "
               ref={parallaxContainerRef}
               initial={{ y: 0 }}
               style={{ y }}
@@ -142,7 +146,9 @@ const Sugolgone = () => {
                   },
                 }}
                 src={images.rose2}
-                className="w-[420px] object-cover relative right-5 h-[250px]  "
+                className="xl:w-[420px]  lg:w-[420px]  object-cover relative xl:right-5 xl:h-[250px] 
+                lg:h-[250px] h-[200px] w-[170px] lg:right-5
+                "
               />
               <p
                 className=" absolute top-[210px] ml-4 text-white text-xl z-[4000] px-2
@@ -153,8 +159,9 @@ const Sugolgone = () => {
             </motion.div>
           </div>
           <div
-            className="flex  xl:flex-row lg:flex-row flex-col bg-white justify-center items-center 
-          xl:mt-[-180px] lg:mt-[-180px] mt-[30px]"
+            className="flex  xl:flex-row lg:flex-row flex-col
+             bg-white justify-center items-center 
+               xl:mt-[-180px] lg:mt-[-180px] mt-[-80px]"
           >
             <motion.div
               className="relative z-1 drop-shadow-xl xl:ml-6 lg:ml-6
@@ -173,13 +180,16 @@ const Sugolgone = () => {
                   },
                 }}
                 src={images.rose4}
-                className="xl:w-[420px] lg:w-[420px] w-[140px] object-cover xl:h-[530px] first-letter:
+                className="xl:w-[420px] lg:w-[420px] 
+                w-screen h-[190px] object-cover xl:h-[530px] 
                 lg:h-[530px]
                 "
               />
             </motion.div>
             <motion.div
-              className=" relative z-4 drop-shadow-xl overflow-hidden  top-[-30px]"
+              className=" relative z-4 drop-shadow-xl overflow-hidden 
+               xl:top-[-30px] lg:top-[-30px] top-[10px]  
+              "
               ref={parallaxContainerRef}
               initial={{ y: 0 }}
               style={{ y }}
@@ -195,11 +205,17 @@ const Sugolgone = () => {
                   },
                 }}
                 src={images.rose5}
-                className=" ml-6  w-[450px] object-cover  h-[290px]"
+                className=" xl:ml-6 lg:ml-6
+                  xl:w-[450px] lg:w-[450px] object-cover  xl:h-[290px]
+                  lg:h-[290px] h-[180px]
+                  ml-[90px]
+                  "
               />
             </motion.div>
             <motion.div
-              className="relative z-1 drop-shadow-xl overflow-hidden "
+              className="relative z-1 mt-[-170px] xl:mt-0 lg:mt-0 first-letter:
+              xl:ml-0 lg:ml-0
+              ml-[-260px] drop-shadow-xl overflow-hidden "
               ref={parallaxContainerRef}
               initial={{ y: 0 }}
               style={{ y }}
@@ -215,7 +231,7 @@ const Sugolgone = () => {
                 }}
                 src={images.rose6}
                 className="xl:w-[380px] lg:w-[380px]
-                
+                w-[200px] 
                 object-cover relative xl:right-12 lg:right-12 xl:h-[520px] lg:h-[520px]  "
               />
               <p className=" absolute bottom-[10px] ml-2 text-white text-lg z-[4000] ">

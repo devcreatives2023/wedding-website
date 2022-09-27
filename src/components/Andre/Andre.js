@@ -51,7 +51,7 @@ const Andre = () => {
   );
 
   return (
-    <div className=" bg-white">
+    <div className=" bg-white w-screen" >
       <h1
         className="capitalize xl:text-[8rem]
         lg:text-[7rem] 

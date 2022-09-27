@@ -20,8 +20,8 @@ const Carousel = () => {
   };
   React.useEffect(() => {});
   return (
-    <div className="  relative overflow-hidden w-[100%] flex justify-center items-center
-     xl:mt-[-42%] lg:mt-[-42%] md:mt-[-520px]  left-[25%]  z-0">
+    <div className="relative overflow-hidden w-[100%] flex justify-center items-center
+     xl:mt-[-42%] lg:mt-[-42%] md:mt-[-520px] mt-[-400px]  xl:left-[25%] lg:left-[25%]  z-0">
       <AnimatePresence>
         {data.carousel.map((item, index) => {
           return (
@@ -29,8 +29,8 @@ const Carousel = () => {
               key={index}
               className={
                 index === current
-                  ? "opacity-1 translate-x-0 xl:mt-[50px] mt-[-90%] z-[100000] overflow-hidden lg:mt-[-30px] md:mt-[-0px]"
-                  : "absolute xl:top-[-30%] lg:mt-[-40%] mt-[-60%] overflow-hidden xl:left-0 z-[100000]  opacity-0 "
+                  ? "opacity-1 translate-x-0 xl:mt-[50px] mt-[-10%] z-[100000] overflow-hidden lg:mt-[-30px] md:mt-[-0px]"
+                  : "absolute xl:top-[-30%] lg:mt-[-40%] mt-[-10%] overflow-hidden xl:left-0 z-[100000]  opacity-0 "
               }
             >
               <motion.div

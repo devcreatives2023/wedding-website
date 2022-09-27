@@ -1,10 +1,10 @@
 import React from "react";
 import { images } from "../../constants";
 import { motion } from "framer-motion";
-const Checklist = () => {
+const Checklist = () => { 
   return (
-    <div className="   mt-[0px] relative overflow-hidden">
-      <motion.div className=" mt-[70px]  object-cover">
+    <div className=" relative overflow-hidden  ">
+      <motion.div className=" xl:mt-[70px] bg-white lg:mt-[70px] mt-[200px] object-cover">
         <motion.img
           initial={{ scale: 1 }}
           whileHover={{
@@ -17,9 +17,14 @@ const Checklist = () => {
           src={images.checklist}
           className="  overflow-hidden  brightness-[0.9] xl:h-[700px] lg:h-[700px]  w-[100%] object-cover"
         />
-
         <p
-          className=" text-[red] absolute text-[9rem] ml-10 bottom-[150px]"
+          className=" text-[red] absolute xl:text-[9rem] lg:text-[9rem]
+          text-[4rem]
+          xl:ml-10 lg:ml-10 xl:bottom-[150px]  
+          lg:bottom-[150px]
+          bottom-[30px]
+          
+          "
           style={{ textShadow: "4px 5px 5px gray" }}
         >
           Wedding{" "}

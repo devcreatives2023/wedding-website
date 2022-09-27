@@ -50,7 +50,7 @@ const Stinion = () => {
     springConfig
   );
   return (
-    <div className="h-[40vh] ">
+    <div className="h-[40vh]  w-screen">
       <h1
         className="capitalize xl:text-[11rem] lg:text-[11rem] text-[7rem]
         flex justify-center items-center xl:text-center lg:text-center  tracking-wider text-[#eee]"
@@ -63,7 +63,7 @@ const Stinion = () => {
           style={{ minHeight }}
         >
           <div
-            className="flex   lg:pl-[60px]  xl:pl-[60px] bg-white
+            className="flex lg:pl-[60px]  xl:pl-[60px] bg-white
            h-[100vh] xl:flex-row lg:flex-row flex-col"
           >
             <motion.div
@@ -85,9 +85,10 @@ const Stinion = () => {
                 src={images.br3}
                 className="xl:w-[500px] lg:w-[500px] 
                 lg:mt-[40px]
-                 mt-[90px]
+                mt-[90px]
                 object-cover xl:mt-[40px] xl:h-[300px]
                 lg:h-[300px] h-[200px]
+
                 "
               />
               <p className=" absolute top-[300px] ml-4 text-white text-xl z-[4000] px-2">
@@ -97,7 +98,7 @@ const Stinion = () => {
             <motion.div
               className=" relative z-4 left-[-40px]
                overflow-hidden drop-shadow-xl xl:top-[-120px] lg:top-[-120px]
-               top-[-10px]
+               top-[20px]
                "
               ref={parallaxContainerRef}
               initial={{ y: 0 }}
@@ -116,8 +117,9 @@ const Stinion = () => {
                 className=" xl:ml-6 lg:ml-6
                 xl:w-[420px]
                 lg:w-[420px]
-                object-cover  
-                 xl:h-[600px] lg:h-[600px]"
+                object-cover
+                w-[200px]  
+                xl:h-[600px] lg:h-[600px]"
               />
             </motion.div>
 
@@ -139,14 +141,15 @@ const Stinion = () => {
                 }}
                 src={images.weddin5}
                 className="xl:w-[420px] lg:w-[420px]
-                w-[250px]
+                w-[280px]
                 object-cover relative 
                 lg:right-5
+                left-0 
                 xl:right-5 xl:h-[190px] lg:h-[190px] brightness-75  "
               />
               <p
                 className=" 
-                absolute xl:top-[210px] lg:top-[210px]  top-[111px]
+                absolute xl:top-[210px] lg:top-[210px]  top-[281px]
                  ml-4 text-white text-xl z-[4000] px-2"
               >
                 Destroy couch as revenge
@@ -159,7 +162,8 @@ const Stinion = () => {
           items-center xl:mt-[-140px] lg:mt-[-140px] "
           >
             <motion.div
-              className="relative z-1 drop-shadow-xl ml-[-140px] xl:ml-6 lg:ml-6 overflow-hidden"
+              className="relative z-1 drop-shadow-xl 
+              ml-[-270px] xl:ml-6 lg:ml-6 overflow-hidden"
               ref={parallaxContainerRef}
               initial={{ y: 0 }}
               style={{ y }}
@@ -175,12 +179,15 @@ const Stinion = () => {
                 }}
                 src={images.r1}
                 className="xl:w-[420px] lg:w-[420px] w-[200px]
+                object-cover h-[300px] xl:h-[530px] lg:h-[530px]
                 
-                object-cover h-[300px] xl:h-[530px] lg:h-[530px]"
+                "
               />
             </motion.div>
             <motion.div
-              className=" relative z-4 drop-shadow-xl overflow-hidden  top-[-30px]"
+              className=" relative z-4 drop-shadow-xl overflow-hidden  xl:top-[-30px]
+              lg:top-[-30px] top-[-290px]
+              "
               ref={parallaxContainerRef}
               initial={{ y: 0 }}
               style={{ y }}
@@ -195,8 +202,10 @@ const Stinion = () => {
                   },
                 }}
                 src={images.r2}
-                className=" xl:ml-6 lg:ml-6  xl:w-[450px] lg:w-[450px] object-fill  xl:h-[290px]
-                lg:h-[290px] h-[120px] w-[230px]
+                className=" xl:ml-6 lg:ml-6 ml-[90px] 
+                xl:w-[450px] lg:w-[450px] 
+                object-fill  xl:h-[290px]
+                lg:h-[290px] h-[320px] w-[150px]
                 "
               />
             </motion.div>

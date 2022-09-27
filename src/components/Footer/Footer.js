@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" relative z-[100] xl:h-[120vh] lg:h-[120vh] h-[90vh]
+    <div className="  relative z-[100] xl:h-[120vh] lg:h-[120vh] mt-[300px] xl:mt-0 lg:mt-0
      app__footer text-white ">
       <div className="z-0 relative bg-[#000000a2] w-[100%] h-[100%]" />
       <div
