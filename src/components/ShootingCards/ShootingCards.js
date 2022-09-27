@@ -4,11 +4,14 @@ import { motion } from "framer-motion";
 
 const ShootingCards = () => {
   return (
-    <div>
+    <div className=" w-screen overflow-x-hidden mt-[-80px] xl:mt-0 lg:mt-0">
       <div
         className="xl:px-[8rem] lg:px-[8rem] grid 
-       grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 mb-12
-       justify-between gap-5 "
+       grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 mb-12
+       xl:justify-between xl:gap-5 lg:gap-5  
+       lg:justify-between w-screen
+       px-[1rem]
+       "
       >
         <div>
           <motion.img
@@ -20,9 +23,11 @@ const ShootingCards = () => {
               },
             }}
             src={images.ty2}
-            className="xl:h-[500px] lg:h-[500px] w-[400px]  object-cover "
+            className="xl:h-[500px] lg:h-[500px]
+            w-[150px]
+            h-[200px]  xl:w-[400px] lg:w-[400px] object-cover "
           />
-          <p className="text-xl my-4"> Quasi. Commodo consequat </p>
+          <p className="xl:text-xl text-[7px] lg:text-xl  my-4"> Quasi. Commodo consequat </p>
         </div>
 
         <div>
@@ -35,9 +40,10 @@ const ShootingCards = () => {
               },
             }}
             src={images.andre1}
-            className="xl:h-[520px] lg:h-[520px] mt-3 w-[400px] object-cover  "
+            className="xl:h-[520px] h-[200px] lg:h-[520px] 
+            mt-3 xl:w-[400px] xl:ml-0 lg:ml-0 lg:w-[400px] object-cover  "
           />
-          <p className="text-xl my-4"> Quasi. Commodo consequat </p>
+          <p className="xl:text-xl text-[7px] lg:text-xl xl:my-4 lg:my-4"> Quasi. Commodo consequat </p>
         </div>
 
         <div>
@@ -50,9 +56,9 @@ const ShootingCards = () => {
               },
             }}
             src={images.r3}
-            className="xl:h-[520px] lg:h-[520px] mt-4 w-[400px] object-cover  "
+            className="xl:h-[520px] lg:h-[520px] mt-4  lg:w-[400px] h-[200px] w-[150px] xl:w-[400px] object-cover  "
           />
-          <p className="text-xl my-4"> Quasi. Commodo consequat </p>
+          <p className="xl:text-xl text-[7px] lg:text-xl my-4"> Quasi. Commodo consequat </p>
         </div>
         <div>
           <motion.img
@@ -64,10 +70,11 @@ const ShootingCards = () => {
               },
             }}
             src={images.andre6}
-            className="xl:h-[500px] lg:h-[500px] w-[400px]  
+            className="xl:h-[500px] lg:h-[500px] h-[200px] xl:w-[400px] lg:w-[400px] w-[150px] 
+            xl:ml-0 lg:ml-0 
             object-cover  "
           />
-          <p className="text-xl my-4"> Quasi. Commodo consequat </p>
+          <p className="xl:text-xl text-[7px] lg:text-xl xl:my-4 lg:my-4 " > Quasi. Commodo consequat </p>
         </div>
 
         <div>
@@ -80,9 +87,10 @@ const ShootingCards = () => {
               },
             }}
             src={images.wedding1}
-            className="xl:h-[520px] lg:h-[520px] mt-3 w-[400px] object-cover  "
+            className="xl:h-[520px] lg:h-[520px] h-[200px] w-[160px] mt-3 xl:w-[400px]
+             lg:w-[400px] object-cover  "
           />
-          <p className="text-xl my-4"> Quasi. Commodo consequat </p>
+          <p className="xl:text-xl  text-[7px] lg:text-xl xl:my-4 lg:my-4"> Quasi. Commodo consequat </p>
         </div>
 
         <div>
@@ -95,9 +103,10 @@ const ShootingCards = () => {
               },
             }}
             src={images.br3}
-            className="xl:h-[520px] lg:h-[520px] mt-4 w-[400px] object-cover  "
+            className="xl:h-[520px] lg:h-[520px] xl:ml-0 lg:ml-0
+             h-[200px] mt-4 xl:w-[400px] lg:w-[400px] w-[150px] object-cover  "
           />
-          <p className="text-xl my-4"> Quasi. Commodo consequat </p>
+          <p className="xl:text-xl lg:text-xl text-[7px] xl:my-4 lg:my-4"> Quasi. Commodo consequat </p>
         </div>
 
         <div>
@@ -112,7 +121,7 @@ const ShootingCards = () => {
             src={images.r1}
             className="xl:h-[520px] lg:h-[520px] mt-4 w-[400px] object-cover  "
           />
-          <p className="text-xl my-4"> Quasi. Commodo consequat </p>
+          <p className="xl:text-xl lg:text-xl text-[7px] my-4"> Quasi. Commodo consequat </p>
         </div>
       </div>
     </div>

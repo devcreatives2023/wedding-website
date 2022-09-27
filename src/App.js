@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { icons } from "./constants";
-import { Home, LocationOzieri, Locations, Partners, Shooting } from "./pages";
+import { Home, LocationOzieri, Locations, Partners, Progetto, Shooting } from "./pages";
 import { Footer, Text, Xd } from "./components";
 const App = () => {
   // change cursor style
@@ -81,13 +81,12 @@ const App = () => {
     <>
       <div
         className="cursor-dot flex  font-logo justify-center
-         items-center capitalize z-[12290000000000000000000]
+         items-center capitalize z-[111111000000]
          text-red-700 font-semibold "
         ref={dot}
-      >
-        <i>wedding</i> <icons.AiFillHeart className="ml-1" />
+      > <icons.AiFillHeart fontSize={24} className="ml-1" />
       </div>
-      <div className=" font-main  overflow-x-hidden">
+      <div className=" font-main overflow-x-hidden">
         <Text />
         <Xd />
         <BrowserRouter>
@@ -103,6 +102,7 @@ const App = () => {
               </Route>
 
               <Route  path="Partners" element={<Partners />}  />
+              <Route  path="progetto" element={<Progetto />}  />
             </Route>
           </Routes>
         </BrowserRouter>

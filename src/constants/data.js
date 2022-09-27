@@ -97,6 +97,13 @@ const data = {
       link: "",
     },
   ],
+
+  progetto: [
+    { question: "In the middle of the night i crawl ", answer: ". Ullam anim ut nostrum. Voluptas labore. Ullamco amet dicta for aut or sint, ipsa for voluptatem. Veritatis. " },
+    { question: "Commodi adipisci for laboris. Quo exercitationem for lorem and nulla ", answer: " Veritatis. Vitae magnam for totam. Consectetur. Vel eiusmod. Ex labore sunt velit." },
+    { question: "What is your name", answer: "Quam aliquid for ullam. Velit dicta. Esse. Velit. Vel nesciunt. Ipsum nequeporro quo, or aliquid and rem. Ratione reprehenderit. " },
+    { question: "What is your name", answer: "Quam aliquid for ullam. Velit dicta. Esse. Velit. Vel nesciunt. Ipsum nequeporro quo, or aliquid and rem. Ratione reprehenderit. " },
+  ],
 };
 
 export default data;
