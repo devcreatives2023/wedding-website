@@ -9,7 +9,7 @@ const Header = () => {
           muted
           controls
           autoPlay
-          className="top-0 left-0 right-0 fixed xl:w-[100%] lg:w-[100%] w-[30%]  xl:h-[96vh] lg:h-[96vh] object-cover brightness-75"
+          className="top-0 left-0 right-0 fixed xl:w-[100%] lg:w-[100%] w-screen  xl:h-[96vh] lg:h-[96vh] object-cover brightness-75"
         >
           <source src={images.video2} typle="video/mp4" className="xl:w-[100%] lg:w-[100%] w-[50%]  object-cover" />
         </video>

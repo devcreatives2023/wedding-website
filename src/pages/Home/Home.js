@@ -72,8 +72,9 @@ const Home = () => {
             <Location />
           </div>
 
-          <div className=" relative h-[140vh]  top-[300px] w-[90%] m-auto  overflow-hidden">
-            <Checklist />
+          <div className=" relative xl:h-[140vh] lg:h-[140vh] h-[50vh] 
+           top-[300px] w-[100%] m-auto  overflow-hidden">
+            {/* <Checklist /> */}
              </div>
         </div>
       </div>

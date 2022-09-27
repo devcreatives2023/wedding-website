@@ -29,14 +29,15 @@ const Carousel = () => {
               key={index}
               className={
                 index === current
-                  ? "opacity-1 translate-x-0 xl:mt-[50px] overflow-hidden lg:mt-[-30px] md:mt-[-0px]"
-                  : "absolute xl:top-[-30%] lg:mt-[-40%] overflow-hidden xl:left-0 w-[100%] h-[100%] opacity-0 "
+                  ? "opacity-1 translate-x-0 xl:mt-[50px] mt-[-90%] z-[100000] overflow-hidden lg:mt-[-30px] md:mt-[-0px]"
+                  : "absolute xl:top-[-30%] lg:mt-[-40%] mt-[-60%] overflow-hidden xl:left-0 z-[100000]  opacity-0 "
               }
             >
               <motion.div
-                className=" w-[50%] lg:w-[55%] md:w-[60%]
+                className=" xl:w-[50%] lg:w-[55%] md:w-[60%] w-[100%]
                 h-[500px]
-                top-[-90%] relative z-10"
+                top-[-60%]
+                xl:top-[-90%] lg:top-[-90%]  relative z-10"
               >
                 <img
                   src={item.img}
@@ -49,7 +50,7 @@ const Carousel = () => {
              lg:bottom-[55px] md:bottom-[130px] text-white ml-5"
               >
                 <span className=" text-[0.9rem] ml-2 uppercase">
-                  {item.name}{" "}
+                  {item.name}
                 </span>
                 <span className=" text-[2rem]  ">{item.place} </span>
               </div>

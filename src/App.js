@@ -86,7 +86,7 @@ const App = () => {
         ref={dot}>
         <i>wedding</i> <icons.AiFillHeart className="ml-1" />
       </div>
-      <div className=" font-main">
+      <div className=" font-main  overflow-x-hidden">
         <Text />
         <Xd />
         <BrowserRouter>
