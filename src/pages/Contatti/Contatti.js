@@ -63,7 +63,7 @@ const Contatti = () => {
           </div>
         </div>
 
-        <div className=" gap-y-12 xl:w-[50%] lg:w-[50%] m-auto text-center flex flex-col justify-center
+        <div className=" gap-y-5 xl:w-[50%] lg:w-[50%] m-auto text-center xl:py-[100px] lg:py-[100px]  flex flex-col justify-center
          items-center ">
           <h1 className="text-[1.8rem] text-[#4b4b4b] font-semibold"> Laborum minim dicta.</h1>
           <p className=" leading-8 text-xl">
