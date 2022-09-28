@@ -1,21 +1,30 @@
 import React from "react";
 import { images,icons } from "../../constants";
 import { motion } from "framer-motion";
-
+import {Navbar} from '../../components'
 const Contatti = () => {
   return (
-    <div>
+    <>
+    <>
+    <Navbar />
+    </>
+    <motion.div
+    initial={{scale:0.9,opacity:0}}
+    animate={{opacity:1,scale:1,transition:{
+        duration:1
+    }}}
+    >
       <div className=" flex flex-col justify-center xl:px-[12rem] lg:px-[12rem] px-0">
         <h1
           className="relative z-10 xl:text-[4.7rem] lg:text-[4.7rem] text-[2rem] 
-        text-[#696969] text-left mt-[90px] "
-        >
+          text-[#696969] text-left mt-[90px] "
+          >
           Contatti
         </h1>
         <h1
           className="z-0 xl:text-[14rem] lg:text-[14rem] text-[5rem] relative top-[-40px]
-         xl:top-[-130px] lg:top-[-130px]  h-[170px] text-[#eee]  xl:text-center lg:text-center"
-        >
+          xl:top-[-130px] lg:top-[-130px]  h-[170px] text-[#eee]  xl:text-center lg:text-center"
+          >
           Contatti
         </h1>
       </div>
@@ -68,21 +77,21 @@ const Contatti = () => {
             <input
               type="text"
               className=" border-b-[1px] outline-none border-[#959595]
-            w-[100%] p-1 placeholder:text-[grey] placeholder:text-[18px] "
+              w-[100%] p-1 placeholder:text-[grey] placeholder:text-[18px] "
               placeholder="Name of cognome*"
-            />
+              />
             <input
               type="text"
               className=" border-b-[1px] outline-none border-[#959595]
-            w-[100%] p-1 placeholder:text-[grey] placeholder:text-[18px] "
+              w-[100%] p-1 placeholder:text-[grey] placeholder:text-[18px] "
               placeholder="Email*"
-            />
+              />
             <textarea
               rows={3}
               className=" border-b-[1px] outline-none border-[#959595]
-            w-[100%] p-1 placeholder:text-[grey] placeholder:text-[18px] "
+              w-[100%] p-1 placeholder:text-[grey] placeholder:text-[18px] "
               placeholder="Messaggio*"
-            ></textarea>
+              ></textarea>
             <div className="flex text-[gray] mt-5 gap-x-2 justify-between">
               <div className=" flex justify-center items-center">
                 <input type="checkbox" />
@@ -100,27 +109,28 @@ const Contatti = () => {
           <motion.img
             inital={{ y: 5 }}
             whileInView={{
-              y: -35,
-              transition: {
-                duration: 3,
-              },
+                y: -35,
+                transition: {
+                    duration: 3,
+                },
             }}
             src={images.rose2}
             className=" xl:w-[600px] lg:w-[600px] object-cover"
-          />
+            />
           <motion.img
             inital={{ y: 5 }}
             whileInView={{
-              y: 35,
-              transition: {
-                duration: 3,
-              },
+                y: 35,
+                transition: {
+                    duration: 3,
+                },
             }}
             src={images.andre3}
             className=" xl:w-[600px] lg:w-[600px] w-[100%] object-cover"
-          />
+            />
         </div>
-    </div>
+    </motion.div>
+            </>
   );
 };
 
