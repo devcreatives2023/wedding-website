@@ -2,6 +2,7 @@ import React from "react";
 import { LocationCards, Navbar } from "../../components";
 import { motion } from "framer-motion";
 const Locations = () => {
+
   return (
     <motion.div
       initial={{ scale: 0.9, opacity: 0 }}

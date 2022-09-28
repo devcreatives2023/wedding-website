@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { icons } from "../../constants";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const variants = {
@@ -71,7 +71,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div
+    <motion.div
       className={
         navbar
           ? "  capitalize text-[#8f8f8f] z-[10000000000]  fixed left-0 xl:right-0 right-10   transition-[0.9s] xl:p-logo lg:p-lg md:p-md sm:p-sm"
@@ -117,6 +117,7 @@ const Navbar = () => {
           </button>
         </motion.div>
       </motion.div>
+<AnimatePresence>
 
       {show ? (
         <motion.nav
@@ -124,21 +125,21 @@ const Navbar = () => {
           variants={variants}
           animate={show ? "opened" : "closed"}
           className="fixed  w-screen h-screen  p-10 top-0 flex-col 
-      z-1 flex cursor-pointer xl:items-center lg:items-center 
-      xl:right-0 lg:right-0  right-0 text-center  
-      z-10
-      items-center bg-[#fffffff0]"
+          z-1 flex cursor-pointer xl:items-center lg:items-center 
+          xl:right-0 lg:right-0  right-0 text-center  
+          z-10
+          items-center bg-[#fffffff0]"
         >
           <button
             className=" cursor-pointer absolute right-10 top-[-20px]
           text-[2rem] text-[gray] pt-10  "
-            onClick={() => setShow(!show)}
+          onClick={() => setShow(!show)}
           >
             <icons.GiTireIronCross />
           </button>
           <motion.div
             className=" bg-white xl:w-[65%] w-screen lg:w-[65%] flex 
-          flex-col xl:flex-row lg:flex-row  xl:p-[50px] lg:p-[50px] p-[60px]
+            flex-col xl:flex-row lg:flex-row  xl:p-[50px] lg:p-[50px] p-[60px]
           xl:justify-around
           lg:justify-around text-[1.5rem] 
           justify-center items-start
@@ -149,15 +150,15 @@ const Navbar = () => {
             <ul
               className=" xl:ml-[-250px] lg:ml-[-250px]  flex flex-col justify-around xl:text-[2rem]
            lg:text-[2rem] tracking-wider   text-[#000000a5]"
-            >
+           >
               <motion.li
                 initial="default"
                 whileHover="hover"
                 animate="default"
                 className=" 
-              cursor-pointer relative m-[0 auto] grid justify-center items-center
-              overflow-hidden"
-              >
+                cursor-pointer relative m-[0 auto] grid justify-center items-center
+                overflow-hidden"
+                >
                 <Link to="/shoot" className=" grid-rows-1 grid-cols-1">
                   Shooting
                 </Link>
@@ -173,17 +174,17 @@ const Navbar = () => {
                 whileHover="hover"
                 animate="default"
                 className=" 
-              cursor-pointer relative m-[0 auto] grid justify-center items-center
-              overflow-hidden"
-              >
+                cursor-pointer relative m-[0 auto] grid justify-center items-center
+                overflow-hidden"
+                >
                 <Link to="" className=" grid-rows-1 grid-cols-1">
                   wedding day
                 </Link>
                 <motion.div
                   variants={middleline}
                   className=" bg-[gray] top-[-10px]
-                h-[2px] relative left-0 w-[100%] z-1 mt-[-23px]"
-                />
+                  h-[2px] relative left-0 w-[100%] z-1 mt-[-23px]"
+                  />
               </motion.li>
 
               <motion.li
@@ -191,10 +192,10 @@ const Navbar = () => {
                 whileHover="hover"
                 animate="default"
                 className=" 
-              cursor-pointer relative m-[0 auto] grid
-              justify-center items-center
-              overflow-hidden"
-              >
+                cursor-pointer relative m-[0 auto] grid
+                justify-center items-center
+                overflow-hidden"
+                >
                 <Link to="/locations" className=" grid-rows-1 grid-cols-1">
                   location
                 </Link>
@@ -210,7 +211,7 @@ const Navbar = () => {
                 whileHover="hover"
                 animate="default"
                 className=" 
-              cursor-pointer relative m-[0 auto] grid justify-center items-center
+                cursor-pointer relative m-[0 auto] grid justify-center items-center
               overflow-hidden"
               >
                 <Link to="/Partners" className=" grid-rows-1 grid-cols-1">
@@ -228,7 +229,7 @@ const Navbar = () => {
                 whileHover="hover"
                 animate="default"
                 className=" 
-              cursor-pointer relative m-[0 auto] grid justify-center items-center
+                cursor-pointer relative m-[0 auto] grid justify-center items-center
               overflow-hidden"
               >
                 <Link to="" className=" grid-rows-1 grid-cols-1">
@@ -247,9 +248,9 @@ const Navbar = () => {
                 whileHover="hover"
                 animate="default"
                 className=" 
-              cursor-pointer relative m-[0 auto] grid justify-center items-center
-              overflow-hidden"
-              >
+                cursor-pointer relative m-[0 auto] grid justify-center items-center
+                overflow-hidden"
+                >
                 <Link to="/progetto" className=" grid-rows-1 grid-cols-1">
                   progetto
                 </Link>
@@ -265,9 +266,9 @@ const Navbar = () => {
                 whileHover="hover"
                 animate="default"
                 className=" 
-              cursor-pointer relative m-[0 auto] grid justify-center items-center
-              overflow-hidden"
-              >
+                cursor-pointer relative m-[0 auto] grid justify-center items-center
+                overflow-hidden"
+                >
                 <Link to="/social" className=" grid-rows-1 grid-cols-1">
                   social wall
                 </Link>
@@ -302,16 +303,16 @@ const Navbar = () => {
                 whileHover="hover"
                 animate="default"
                 className=" 
-              cursor-pointer relative m-[0 auto] grid justify-center items-center
-              overflow-hidden"
-              >
+                cursor-pointer relative m-[0 auto] grid justify-center items-center
+                overflow-hidden"
+                >
                 <Link to="/market" className=" grid-rows-1 grid-cols-1">
                   marketing
                 </Link>
                 <motion.div
                   variants={middleline2}
                   className=" bg-[gray] top-[-10px]
-                h-[2px] relative left-0 w-[100%] z-1 mt-[-23px]"
+                  h-[2px] relative left-0 w-[100%] z-1 mt-[-23px]"
                 />
               </motion.li>
 
@@ -329,7 +330,7 @@ const Navbar = () => {
                 <motion.div
                   variants={middleline2}
                   className=" bg-[gray] top-[-10px]
-                h-[2px] relative left-0 w-[100%] z-1 mt-[-23px]"
+                  h-[2px] relative left-0 w-[100%] z-1 mt-[-23px]"
                 />
               </motion.li>
             </ul>
@@ -337,8 +338,9 @@ const Navbar = () => {
         </motion.nav>
       ) : (
         ""
-      )}
-    </div>
+        )}
+        </AnimatePresence>
+    </motion.div>
   );
 };
 
