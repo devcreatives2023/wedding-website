@@ -305,7 +305,7 @@ const Navbar = () => {
               cursor-pointer relative m-[0 auto] grid justify-center items-center
               overflow-hidden"
               >
-                <Link to="" className=" grid-rows-1 grid-cols-1">
+                <Link to="/market" className=" grid-rows-1 grid-cols-1">
                   marketing
                 </Link>
                 <motion.div
