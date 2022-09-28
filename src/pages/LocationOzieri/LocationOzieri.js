@@ -83,7 +83,7 @@ const sliderRight=()=>{
                      shadow p-4 xl:h-[400px] lg:h-[400px]  cursor-pointer hover:scale-105 ease-in-out duration-300"
                   >
                     <img
-                      src={item.img}
+                      src={item.img} alt="locations name"
                       className="w-full h-full  object-cover"
                     />
                   </div>
