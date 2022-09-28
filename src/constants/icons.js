@@ -8,6 +8,7 @@ import {
 import { BsDashLg, BsHeart } from "react-icons/bs";
 import { IoMdFlower } from "react-icons/io";
 import { TbMessageCircle2 } from "react-icons/tb";
+import { BiRightArrow, BiLeftArrow } from "react-icons/bi";
 
 export default {
   HiOutlineMenuAlt2,
@@ -21,4 +22,6 @@ export default {
   AiOutlineUpload,
   AiOutlineShareAlt,
   HiOutlineArrowNarrowRight,
+  BiRightArrow,
+  BiLeftArrow,
 };

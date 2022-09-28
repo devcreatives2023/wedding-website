@@ -90,7 +90,7 @@ const Navbar = () => {
         <div
           className=" font-logo lg:text-[1.5rem] 
           text-[1rem] xl:text-[1.4rem]
-          md:text-[1.5rem]
+          md:text-[1.5rem] relative z-0
           mr-1 tracking-wide xl:leading-10 flex items-center 
           justify-center mt-4 font-bold "
           style={{ textShadow: " 1px 1px 2px black" }}
@@ -117,7 +117,7 @@ const Navbar = () => {
           </button>
         </motion.div>
       </motion.div>
-<AnimatePresence>
+      <AnimatePresence>
 
       {show ? (
         <motion.nav
