@@ -4,14 +4,13 @@ import { motion } from "framer-motion";
 const Locations = () => {
   return (
     <motion.div
-      initial={{ x: 400, opacity: 0, right: 0 }}
+      initial={{ scale: 0.9, opacity: 0 }}
       animate={{
-        x: 0,
         opacity: 1,
         transition: {
           duration: 1,
         },
-        left: 0,
+        scale: 1,
       }}
       className=" relative z-[1000]"
     >
@@ -25,7 +24,8 @@ const Locations = () => {
         </h1>
         <h1
           className="z-0 xl:text-[14rem] lg:text-[14rem] text-[5rem] relative top-[-40px]
-         xl:top-[-130px] lg:top-[-130px]  h-[170px] text-[#eee]  xl:text-center lg:text-center">
+         xl:top-[-130px] lg:top-[-130px]  h-[170px] text-[#eee]  xl:text-center lg:text-center"
+        >
           Location:
         </h1>
       </div>

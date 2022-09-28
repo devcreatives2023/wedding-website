@@ -27,7 +27,6 @@ const Progetto = () => {
       <>
         <Navbar />
       </>
-      Progetto
       <div className=" flex flex-col justify-center xl:px-[12rem] lg:px-[12rem] px-0">
         <h1
           className="relative z-10 xl:text-[4.7rem] lg:text-[4.7rem] text-[2rem] 

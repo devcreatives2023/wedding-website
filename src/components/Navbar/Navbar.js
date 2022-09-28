@@ -273,8 +273,8 @@ const Navbar = () => {
                 </Link>
                 <motion.div
                   variants={middleline2}
-                  className=" bg-[gray] top-[-10px]
-                h-[2px] relative left-0 w-[100%] z-1 mt-[-23px]"
+                  className="bg-[gray] top-[-10px]
+                  h-[2px] relative left-0 w-[100%] z-1 mt-[-23px]"
                 />
               </motion.li>
 
@@ -323,7 +323,7 @@ const Navbar = () => {
               cursor-pointer relative m-[0 auto] grid justify-center items-center
               overflow-hidden"
               >
-                <Link to="" className=" grid-rows-1 grid-cols-1">
+                <Link to="/contatti" className=" grid-rows-1 grid-cols-1">
                   contatti
                 </Link>
                 <motion.div
