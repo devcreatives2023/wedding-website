@@ -21,7 +21,7 @@ const sliderRight=()=>{
         <Navbar />
       </>
       <motion.div
-        className=" xl:h-[76vh] lg:h-[76vh] h-[50vh]"
+        className=" xl:h-[83vh] lg:h-[83vh] h-[50vh]"
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{
           opacity: 1,
