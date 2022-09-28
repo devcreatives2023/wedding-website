@@ -81,7 +81,7 @@ const Marketing = () => {
       <div className="flex flex-col xl:flex-row lg:flex-row xl:px-[8rem] lg:px-[8rem] xl:py-[5rem] lg:py-[5rem] mt-[70px] justify-between items-center ">
         <motion.img
           inital={{ y: 5 }}
-          animate={{
+          whileInView={{
             y: -35,
             transition: {
               duration: 3,
@@ -92,7 +92,7 @@ const Marketing = () => {
           />
         <motion.img
           inital={{ y: 5 }}
-          animate={{
+          whileInView={{
             y: 35,
             transition: {
               duration: 3,
